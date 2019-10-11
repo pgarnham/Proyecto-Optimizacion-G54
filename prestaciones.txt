@@ -1,0 +1,24 @@
+Cardiología 
+Unidad Broncopulmonar
+Traumatología menor (esguinces, luxaciones, golpes sin fractura)
+Traumatología mayor (fracturas, TEC,...)
+Neurología
+Unidad de Quemados
+Parto
+Cirujia Menor
+Cirujia Mayor
+Neonatología
+Psiquiatría
+Geriatría
+Procedimientos básicos (Curaciones, suturas,...)
+UCI adultos
+UTI adultos
+UCI pediatrica 
+UTI pediatrica
+Otorrinolaringología
+Gastroenterología
+Endocrinología
+Oncología
+Resonador Magnético
+Radiografías
+Tomografía Computarizada (Escáner)
