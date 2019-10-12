@@ -2,9 +2,10 @@
 
 from random import choice
 import googlemaps
+from api_key import api_key
 
 # Requires API key
-gmaps = googlemaps.Client(key='AIzaSyCCBfcHfpVi36tyRmucoD-yFSOUYm3twCU')
+gmaps = googlemaps.Client(key=api_key)
 
 # ---------------------------------------------------------------
 
