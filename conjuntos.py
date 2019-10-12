@@ -1,6 +1,12 @@
 # Conjuntos y Parámetros Proyecto Optimización G54
 
 from random import choice
+import googlemaps
+
+# Requires API key
+gmaps = googlemaps.Client(key='AIzaSyCCBfcHfpVi36tyRmucoD-yFSOUYm3twCU')
+
+# ---------------------------------------------------------------
 
 # Bases Quinta Región -------------------------------------------
 
@@ -106,3 +112,20 @@ for i in range(200):
     solicita_privada_r = choice(solicita_privada)
     pacientes.append((prestacion_r, centro_r, periodo_r, prioridad_r,
                       solicita_privada_r))
+
+
+origen_lat = -32.81699
+origen_lon = -71.1985
+origen = (origen_lat, origen_lon)
+
+destino_lat = -32.78252
+destino_lon = -71.19455
+destino = (destino_lat, destino_lon)
+
+origen_ = (-33.381059, -70.511721)
+destino_ = (-33.385257, -70.518966)
+
+my_dist = gmaps.distance_matrix(origen_, destino_)['rows'][0]['elements'][0]
+
+# Printing the result
+print(my_dist)
