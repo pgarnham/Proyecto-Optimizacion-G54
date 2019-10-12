@@ -1,5 +1,7 @@
 # Conjuntos y Parámetros Proyecto Optimización G54
 
+from random import choice
+
 # Bases Quinta Región -------------------------------------------
 
 bases = ["Centro Regulador", "SAMU Viña del Mar", "SAMU Quintero",
@@ -31,6 +33,16 @@ with open("conjuntos/periodos.csv", "r", encoding="utf-8") as file:
 
 with open("conjuntos/prestaciones.txt", "r", encoding="utf-8") as file:
     prestaciones = [line.strip() for line in file]
+
+# ---------------------------------------------------------------
+
+# Prioridades Triage | Solicita Clinica Privada -----------------
+
+prioridades = [1, 2, 3, 4, 5]
+
+solicita_privada = [0, 1]
+
+# ---------------------------------------------------------------
 
 # Parámetros cortos o constantes: -------------------------------
 
@@ -81,3 +93,16 @@ ambulancias_por_base["SAMU La Ligua"].add(ambulancias[16])
 ambulancias_por_base["SAMU La Ligua"].add(ambulancias[17])
 
 # -----------------------------------------------------------------
+
+# Pacientes (preliminar) ------------------------------------------
+
+pacientes = []
+
+for i in range(200):
+    prestacion_r = choice(prestaciones)
+    centro_r = choice(centros)
+    periodo_r = choice(periodos)
+    prioridad_r = choice(prioridades)
+    solicita_privada_r = choice(solicita_privada)
+    pacientes.append((prestacion_r, centro_r, periodo_r, prioridad_r,
+                      solicita_privada_r))
