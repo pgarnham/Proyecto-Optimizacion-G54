@@ -3,6 +3,8 @@
 from random import choice
 import googlemaps
 from api_key import api_key
+import time
+from datetime import datetime
 
 # Requires API key
 gmaps = googlemaps.Client(key=api_key)
@@ -32,7 +34,14 @@ with open("conjuntos/centros_de_salud.csv", "r", encoding="utf-8") as file:
 # Periodos de Tiempo (un día) -----------------------------------
 
 with open("conjuntos/periodos.csv", "r", encoding="utf-8") as file:
-    periodos = [line.split(";")[0] for line in file if "\ufeffT" not in line]
+    periodos_ = [line.split(";")[0] for line in file if "\ufeffT" not in line]
+    periodos = {}
+    inicio = 0
+    fin = 3600
+    for period in periodos_:
+        periodos[period] = (inicio, fin)
+        inicio += 3600
+        fin += 3600
 
 # ---------------------------------------------------------------
 
@@ -108,11 +117,25 @@ pacientes = []
 for i in range(200):
     prestacion_r = choice(prestaciones)
     centro_r = choice(centros)
-    periodo_r = choice(periodos)
+    periodo_r = choice(list(periodos.keys()))
     prioridad_r = choice(prioridades)
     solicita_privada_r = choice(solicita_privada)
     pacientes.append((prestacion_r, centro_r, periodo_r, prioridad_r,
                       solicita_privada_r))
+
+
+# ------------------ Tiempos de Traslado ----------------------------
+
+dia_base = datetime(2019, 10, 13, 0, 0)  # Día en el que empezamos.
+tiempo_base = int(time.mktime(dia_base.timetuple()))
+
+
+def calc_departure(periodo):
+    """Calcula el time_departure segun el periodo ingresado."""
+    return tiempo_base + choice(range(periodos[periodo][0],
+                                      periodos[periodo][1]))
+
+# --------------------------------------------------------------------
 
 
 origen_lat = -32.81699
@@ -126,7 +149,7 @@ destino = (destino_lat, destino_lon)
 origen_ = (-33.381059, -70.511721)
 destino_ = (-33.385257, -70.518966)
 
-my_dist = gmaps.distance_matrix(origen_, destino_)['rows'][0]['elements'][0]
+# my_dist = gmaps.distance_matrix(origen_, destino_)['rows'][0]['elements'][0]
 
 
 def duracion(google_output):
@@ -135,4 +158,5 @@ def duracion(google_output):
 
 
 # Printing the result
-print(my_dist["duration"]["value"])
+# print(my_dist["duration"]["value"])
+print([calc_departure(per) for per in periodos])
