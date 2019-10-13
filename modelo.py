@@ -8,7 +8,7 @@ from conjuntos import (centros, periodos, prestaciones, bases,
 # Al psi le puse una f
 from parametros import (k_a, i_hf, c_pg, u_h, d_bgt, f_hgt, m_bht, r_ab, lambda_pf, v_p, l_p)
 
-modelo = Model("Sistema de Atención Médica SAMU")
+model = Model("Sistema de Atención Médica SAMU")
 
 # Creación de variables ----------------------------------------------
 
