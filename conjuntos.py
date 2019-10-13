@@ -5,6 +5,7 @@ import googlemaps
 from api_key import api_key
 import time
 from datetime import datetime
+import csv
 
 # Requires API key
 gmaps = googlemaps.Client(key=api_key)
@@ -26,8 +27,21 @@ ambulancias = [f"Ambulancia_{str(numero + 1)}" for numero in range(18)]
 
 # Centros Medicos -----------------------------------------------
 
-with open("conjuntos/centros_de_salud.csv", "r", encoding="utf-8") as file:
-    centros = [linea.split(";")[0] for linea in file if "\ufeffH" not in linea]
+# with open("conjuntos/centros_de_salud_2.csv", "r", encoding="utf-8") as file:
+# centros = [linea.split(";")[0] for linea in file if "\ufeffH" not in linea]
+
+centros = {}
+with open("conjuntos/centros_de_salud_2.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=';')
+    aux = 0
+    for linea in csv_reader:
+        if aux == 0:
+            aux = 1
+        else:
+            centros[linea[0]] = {"id": linea[1], "lat": linea[2],
+                                 "long": linea[3]}
+
+# print(centros)
 
 # ---------------------------------------------------------------
 
@@ -46,9 +60,15 @@ with open("conjuntos/periodos.csv", "r", encoding="utf-8") as file:
 # ---------------------------------------------------------------
 
 # Prestaciones --------------------------------------------------
-
-with open("conjuntos/prestaciones.txt", "r", encoding="utf-8") as file:
-    prestaciones = [line.strip() for line in file]
+prestaciones = {}
+with open("conjuntos/prestaciones_2.csv", "r", encoding="utf-8") as file:
+    x = 0
+    csv_reader = csv.reader(file, delimiter=';')
+    for linea in csv_reader:
+        if x == 0:
+            x = 1
+        else:
+            prestaciones[linea[1]] = linea[0]
 
 # ---------------------------------------------------------------
 
@@ -68,21 +88,41 @@ Nb = 12
 
 # Prestaciones por Centro Médico (parámetro i) ------------------
 
-i_prestaciones = {}
+#
 
-aux_namig = [(f"par_i/{prestacion}.csv", prestacion) for
-             prestacion in prestaciones]
 
-for tupla in aux_namig:
-    with open(tupla[0], "r", encoding="utf-8") as file:
-        for linea in file:
-            index_centro, valor_i = linea.split(",")
-            if "h" not in linea:
-                index_centro = int(index_centro)
-                valor_i = int(valor_i)
-                if centros[index_centro - 1] not in i_prestaciones.keys():
-                    i_prestaciones[centros[index_centro - 1]] = {}
-                i_prestaciones[centros[index_centro - 1]][tupla[1]] = valor_i
+# aux_namig = [(f"par_i/{prestacion}.csv", prestacion) for
+#              prestacion in prestaciones]
+
+# for tupla in aux_namig:
+#     with open(tupla[0], "r", encoding="utf-8") as file:
+#         for linea in file:
+#             index_centro, valor_i = linea.split(",")
+#             if "h" not in linea:
+#                 index_centro = int(index_centro)
+#                 valor_i = int(valor_i)
+#                 if centros[index_centro - 1] not in i_prestaciones.keys():
+#                     i_prestaciones[centros[index_centro - 1]] = {}
+#                 i_prestaciones[centros[index_centro - 1]][tupla[1]] = valor_i
+
+i_prestaciones = {i: {} for i in range(len(centros.keys()) + 1) if i != 0}
+
+with open("conjuntos/centro_salud_prestacion.csv", "r",
+          encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=',')
+    aux = 0
+    for linea in csv_reader:
+        if aux == 0:
+            aux = 1
+        else:
+            aux_ = 0
+            for elem in linea:
+                if aux_ == 0:
+                    aux_ = 1
+                else:
+                    i_prestaciones[int(linea[0])][aux_] = int(elem)
+                    aux_ += 1
+
 
 # -----------------------------------------------------------------
 
@@ -108,14 +148,34 @@ ambulancias_por_base["SAMU La Ligua"].add(ambulancias[15])
 ambulancias_por_base["SAMU La Ligua"].add(ambulancias[16])
 ambulancias_por_base["SAMU La Ligua"].add(ambulancias[17])
 
+ambulancia_avanzada = {}
+for ambulancia in ambulancias:
+    if ambulancia == "Ambulancia_11":
+        ambulancia_avanzada[ambulancia] = 1
+    else:
+        ambulancia_avanzada[ambulancia] = 0
+
 # -----------------------------------------------------------------
 
 # Pacientes (preliminar) ------------------------------------------
 
-pacientes = []
+ubicacion_pacientes = {i: {} for i in range(1, 26)}
+
+with open("conjuntos/pacientes_ubicacion.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=",")
+    aux = 0
+    for paciente in csv_reader:
+        if aux == 0:
+            aux = 1
+        else:
+            ubicacion_pacientes[int(paciente[0])]["lat"] = float(paciente[1])
+            ubicacion_pacientes[int(paciente[0])]["long"] = float(paciente[1])
+
+
+pacientes = {i: {} for i in range(1, 26)}
 
 for i in range(200):
-    prestacion_r = choice(prestaciones)
+    prestacion_r = choice(list(prestaciones.keys()))
     centro_r = choice(centros)
     periodo_r = choice(list(periodos.keys()))
     prioridad_r = choice(prioridades)
@@ -135,28 +195,29 @@ def calc_departure(periodo):
     return tiempo_base + choice(range(periodos[periodo][0],
                                       periodos[periodo][1]))
 
-# --------------------------------------------------------------------
-
-
-origen_lat = -32.81699
-origen_lon = -71.1985
-origen = (origen_lat, origen_lon)
-
-destino_lat = -32.78252
-destino_lon = -71.19455
-destino = (destino_lat, destino_lon)
-
-origen_ = (-33.381059, -70.511721)
-destino_ = (-33.385257, -70.518966)
-
-# my_dist = gmaps.distance_matrix(origen_, destino_)['rows'][0]['elements'][0]
-
 
 def duracion(google_output):
     """Retorna tiempo en segundos del trayecto ingresado."""
     return int(google_output["duration"]["value"])
 
+# --------------------------------------------------------------------
+
+
+# origen_lat = -32.81699
+# origen_lon = -71.1985
+# origen = (origen_lat, origen_lon)
+
+# destino_lat = -32.78252
+# destino_lon = -71.19455
+# destino = (destino_lat, destino_lon)
+
+# origen_ = (-33.381059, -70.511721)
+# destino_ = (-33.385257, -70.518966)
+
+# my_dist = gmaps.distance_matrix(origen_, destino_)['rows'][0]['elements'][0]
+
 
 # Printing the result
 # print(my_dist["duration"]["value"])
-print([calc_departure(per) for per in periodos])
+# print([calc_departure(per) for per in periodos])
+# print(ambulancia_avanzada)

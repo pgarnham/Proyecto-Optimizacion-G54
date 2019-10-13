@@ -1,0 +1,23 @@
+prestacion;nro
+Cardiología avanzada;1
+Unidad Broncopulmonar;2
+"Traumatología menor (esguinces, luxaciones, golpes sin fractura)";3
+"Traumatología mayor (fracturas, TEC,...)";4
+Neurología;5
+Unidad de Quemados;6
+Parto;7
+Cirugia;8
+Neonatología;9
+Psiquiatría;10
+"Procedimientos básicos (Curaciones, suturas,...)";11
+UTI adultos;12
+UCI adultos;13
+UCI pediatrica ;14
+UTI pediatrica;15
+Otorrinolaringología;16
+Endocrinología;17
+Oncología;18
+Resonador Magnético;19
+Radiografías;20
+Tomografía Computarizada (Escáner);21
+Otras urgencias;22
