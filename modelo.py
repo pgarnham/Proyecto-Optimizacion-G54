@@ -10,7 +10,7 @@ from conjuntos import (centros, periodos, prestaciones, bases,
 from parametros import (k_a, i_hf, c_pg, u_h, d_bgt, f_hgt, m_bht, r_ab,
                         lambda_pf, v_p, l_p)
 
-model = Model("Sistema de Atención Médica SAMU")
+modelo = Model("Sistema de Atención Médica SAMU")
 
 # Creación de variables ----------------------------------------------
 
