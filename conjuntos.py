@@ -128,5 +128,11 @@ destino_ = (-33.385257, -70.518966)
 
 my_dist = gmaps.distance_matrix(origen_, destino_)['rows'][0]['elements'][0]
 
+
+def duracion(google_output):
+    """Retorna tiempo en segundos del trayecto ingresado."""
+    return int(google_output["duration"]["value"])
+
+
 # Printing the result
-print(my_dist)
+print(my_dist["duration"]["value"])
