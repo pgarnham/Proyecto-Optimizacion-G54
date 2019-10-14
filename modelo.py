@@ -70,7 +70,7 @@ modelo.addConstrs((lambda_pf[paciente, i_prestacion] <= quicksum(k_a[ambulancia]
 
 # OBS: parece que no hay ningun parametro para N_a, por eso use len()
 # OBS_2: sobra un paratodo en la ecuacion del latex
-modelo.addConstrs((quicksum(s[ambulancia, periodo] <= len(ambulancias) for ambulancia in ambulancias)
+modelo.addConstrs((quicksum(s[periodo, ambulancia] <= len(ambulancias) for ambulancia in ambulancias)
                    for periodo in periodos),
                    name="max_ambulancias_disponibles")
 
@@ -94,11 +94,35 @@ modelo.addConstrs((l_p[paciente] <= quicksum(y[periodo, ambulancia, paciente, ce
 # 6 Atender paciente en centro que posee la prestacion
 
 modelo.addConstrs((quicksum(y[periodo, ambulancia, paciente, centro] * i_hf[centro, prestacion]
-                                            for ambulancia in ambulancias
-                                            for centro in centros) >= lambda_pf[paciente, prestacion]
+                            for ambulancia in ambulancias
+                            for centro in centros) >= lambda_pf[paciente, prestacion]
+
                    for periodo in periodos
                    for paciente in pacientes
                    for prestacion in prestaciones),
                    name="prestaciones")
 
 # 7 Solo se asigna un paciente por ambulancia
+
+modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for periodo in periodos for paciente in pacientes)
+                   <= 1 for ambulancia in ambulancias),
+                  name="solo_1_paciente")
+
+# 8 No pueden ser asignadas mas ambulancias de las disponibles
+
+modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for paciente in pacientes for ambulancia in ambulancias)
+                  <= quicksum(s[periodo, ambulancia] for ambulancia in ambulancias) for periodo in periodos),
+                    name="limite_ambulancias")
+
+# 9 Relacion de Variables
+
+modelo.addConstrs((x[periodo, ambulancia, paciente] <= quicksum(y[periodo, ambulancia,
+                  paciente, centro] for centro in centros) for periodo in periodos for ambulancia in ambulancias
+                            for paciente in pacientes),
+                   name="relacion")
+
+# 10 Dejar ocupadas las ambulacias cuando son asignadas
+
+modelo.addConstrs((quicksum(s[periodo, ambulancia])
+
+),)
