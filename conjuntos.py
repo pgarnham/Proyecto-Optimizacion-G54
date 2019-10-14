@@ -71,6 +71,8 @@ with open("conjuntos/periodos.csv", "r", encoding="utf-8") as file:
         inicio += 3600
         fin += 3600
 
+print(periodos)
+
 # ---------------------------------------------------------------
 
 # Prestaciones --------------------------------------------------
@@ -151,7 +153,7 @@ with open("conjuntos/ambulancia_base.csv", "r", encoding="utf-8") as file:
         else:
             r_ab[f"ambulancia_{int(linea[0])}"] = {bases[i - 1]: linea[i]
                                                    for i in range(1, 6)}
-print(r_ab)
+# print(r_ab)
 
 k_a = {}
 for ambulancia in ambulancias:
@@ -213,7 +215,7 @@ with open("conjuntos/privado_publico.csv", "r", encoding="utf-8") as file:
             u_h[f"paciente_{int(paciente[0])}"] = int(paciente[1])
 
 
-# pacientes = {i: {} for i in range(1, 26)}
+pacientes = {f"paciente_{i}": i for i in range(1, 26)}
 
 # for i in range(200):
 #     prestacion_r = choice(list(prestaciones.keys()))
@@ -242,7 +244,7 @@ def duracion(origen_, destino_, tiempo):
     g_out = gmaps.distance_matrix(origen_,
                                   destino_,
                                   departure_time=tiempo)['rows'][0]['elements'][0]
-    print(g_out)
+    # print(g_out)
     if g_out == {"status": "ZERO_RESULTS"}:
         return float("inf")
     else:

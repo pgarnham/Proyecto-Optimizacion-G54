@@ -3,8 +3,7 @@
 from gurobipy import Model, GRB, quicksum
 # Agregué el conjunto pacientes a cojuntos
 from conjuntos import (centros, periodos, prestaciones, bases,
-                       ambulancias, i_prestaciones,
-                       ambulancias_por_base, pacientes)
+                       ambulancias, pacientes)
 
 # Al psi le puse una f
 from conjuntos import (k_a, i_hf, c_pg, u_h, d_bgt, f_hgt, r_ab,
@@ -56,32 +55,32 @@ modelo.update()
 
 modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for ambulancia in ambulancias) <= 1
                    for paciente in pacientes
-                   for periodo in periodos),
+                   for periodo in list(periodos.keys())),
                    name="solo_1_ambulacia")
 
 # 2 Asignar ambu avanzada
 
-modelo.addConstrs((lambda_pf[paciente, i_prestacion] <= quicksum(k_a[ambulancia] * x[periodo, ambulancia, paciente]
-                                                                 for ambulancia in ambulancias)
-                   for paciente in pacientes
-                   for periodo in periodos
-                   for i_prestacion in i_prestaciones),
-                   name="asigna_avanzada")
+# modelo.addConstrs((lambda_pf[paciente, i_prestacion] <= quicksum(k_a[ambulancia] * x[periodo, ambulancia, paciente]
+#                                                                  for ambulancia in ambulancias)
+#                    for paciente in pacientes
+#                    for periodo in periodos
+#                    for i_prestacion in i_prestaciones),
+#                    name="asigna_avanzada")
 
 # 3 No pueden haber mas ambulancias disponibles que ambulancias
 
 # OBS: parece que no hay ningun parametro para N_a, por eso use len()
 # OBS_2: sobra un paratodo en la ecuacion del latex
-modelo.addConstrs((quicksum(s[periodo, ambulancia] <= len(ambulancias) for ambulancia in ambulancias)
-                   for periodo in periodos),
-                   name="max_ambulancias_disponibles")
+# modelo.addConstrs((quicksum(s[periodo, ambulancia] <= len(ambulancias) for ambulancia in ambulancias)
+#                    for periodo in list(periodos.keys())),
+#                    name="max_ambulancias_disponibles")
 
 # 4 No asignar mas ambulancias de las que existen
 
-modelo.addConstrs((quicksum(x[ambulancia, periodo, paciente] <= len(ambulancias)
+modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] <= len(ambulancias)
                             for ambulancia in ambulancias
                             for paciente in pacientes)
-                   for periodo in periodos),
+                   for periodo in list(periodos.keys())),
                    name="max_ambulancias")
 
 # 5 Atender a un paciente en clinica privada, si así lo desea...
@@ -90,7 +89,7 @@ modelo.addConstrs((l_p[paciente] <= quicksum(y[periodo, ambulancia, paciente, ce
                                             for ambulancia in ambulancias
                                             for centro in centros)
                   for paciente in pacientes
-                  for periodo in periodos),
+                  for periodo in list(periodos.keys())),
                   name="clinica_privada")
 
 # 6 Atender paciente en centro que posee la prestacion
@@ -99,7 +98,7 @@ modelo.addConstrs((quicksum(y[periodo, ambulancia, paciente, centro] * i_hf[cent
                             for ambulancia in ambulancias
                             for centro in centros) >= lambda_pf[paciente, prestacion]
 
-                   for periodo in periodos
+                   for periodo in list(periodos.keys())
                    for paciente in pacientes
                    for prestacion in prestaciones),
                    name="prestaciones")
@@ -125,6 +124,6 @@ modelo.addConstrs((x[periodo, ambulancia, paciente] <= quicksum(y[periodo, ambul
 
 # 10 Dejar ocupadas las ambulacias cuando son asignadas
 
-modelo.addConstrs((quicksum(s[periodo, ambulancia])
+# modelo.addConstrs((quicksum(s[periodo, ambulancia])
 
-),)
+# ),)
