@@ -1,13 +1,13 @@
 # Proyecto Optimización G54
 
 from gurobipy import Model, GRB, quicksum
-#Agregué el conjunto pacientes a cojuntos
+# Agregué el conjunto pacientes a cojuntos
 from conjuntos import (centros, periodos, prestaciones, bases,
                        ambulancias, i_prestaciones,
                        ambulancias_por_base, pacientes)
 
 # Al psi le puse una f
-from parametros import (k_a, i_hf, c_pg, u_h, d_bgt, f_hgt, m_bht, r_ab,
+from conjuntos import (k_a, i_hf, c_pg, u_h, d_bgt, f_hgt, m_bht, r_ab,
                         lambda_pf, v_p, l_p)
 
 modelo = Model("Sistema de Atención Médica SAMU")

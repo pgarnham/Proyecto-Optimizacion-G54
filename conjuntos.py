@@ -17,11 +17,25 @@ gmaps = googlemaps.Client(key=api_key)
 bases = ["Centro Regulador", "SAMU Viña del Mar", "SAMU Quintero",
          "SAMU Quillota", "SAMU La Ligua"]
 
+localizacion_bases = {}
+with open("conjuntos/bases_localizacion.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=";")
+    aux = 0
+    for center in csv_reader:
+        if aux == 0:
+            aux = 1
+            localizacion_bases["SAMU Viña del Mar"] = (float(center[1]),
+                                                       float(center[2]))
+        else:
+            localizacion_bases[center[0]] = (float(center[1]),
+                                             float(center[2]))
+
+
 # ---------------------------------------------------------------
 
 # Ambulancias ---------------------------------------------------
 
-ambulancias = [f"Ambulancia_{str(numero + 1)}" for numero in range(18)]
+ambulancias = [f"ambulancia_{str(numero + 1)}" for numero in range(18)]
 
 # ---------------------------------------------------------------
 
@@ -68,28 +82,9 @@ with open("conjuntos/prestaciones_2.csv", "r", encoding="utf-8") as file:
         if x == 0:
             x = 1
         else:
-            prestaciones[linea[1]] = linea[0]
+            prestaciones[f"prestacion_{linea[1]}"] = linea[0]
 
 # ---------------------------------------------------------------
-
-# Prioridades Triage | Solicita Clinica Privada -----------------
-
-prioridades = [1, 2, 3, 4, 5]
-
-solicita_privada = [0, 1]
-
-# ---------------------------------------------------------------
-
-# Parámetros cortos o constantes: -------------------------------
-
-Nb = 12
-
-# Fin Parámetros cortos o constantes ----------------------------
-
-# Prestaciones por Centro Médico (parámetro i) ------------------
-
-#
-
 
 # aux_namig = [(f"par_i/{prestacion}.csv", prestacion) for
 #              prestacion in prestaciones]
@@ -105,7 +100,7 @@ Nb = 12
 #                     i_prestaciones[centros[index_centro - 1]] = {}
 #                 i_prestaciones[centros[index_centro - 1]][tupla[1]] = valor_i
 
-i_prestaciones = {i: {} for i in range(len(centros.keys()) + 1) if i != 0}
+i_hf = {f"centro_{i}": {} for i in range(len(centros.keys()) + 1) if i != 0}
 
 with open("conjuntos/centro_salud_prestacion.csv", "r",
           encoding="utf-8") as file:
@@ -120,11 +115,28 @@ with open("conjuntos/centro_salud_prestacion.csv", "r",
                 if aux_ == 0:
                     aux_ = 1
                 else:
-                    i_prestaciones[int(linea[0])][aux_] = int(elem)
+                    i_hf[f"centro_{linea[0]}"][f"prestacion_{aux_}"] = int(elem)
                     aux_ += 1
 
 
 # -----------------------------------------------------------------
+
+lambda_pf = {f"paciente_{i}": {} for i in range(1, 26)}
+# Después podemos hacer un set si son varias prestaciones
+
+with open("conjuntos/paciente_prestacion_lambda.csv", "r",
+          encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=",")
+    for nro, linea in enumerate(csv_reader):
+        if nro == 0:
+            pass
+        else:
+            for prest, elem in enumerate(linea):
+                if prest == 0:
+                    pass
+                else:
+                    lambda_pf[f"paciente_{nro}"][f"prestacion_{prest}"] = elem
+
 
 # Ambulancias que hay en cada Base --------------------------------
 
@@ -148,18 +160,18 @@ ambulancias_por_base["SAMU La Ligua"].add(ambulancias[15])
 ambulancias_por_base["SAMU La Ligua"].add(ambulancias[16])
 ambulancias_por_base["SAMU La Ligua"].add(ambulancias[17])
 
-ambulancia_avanzada = {}
+k_a = {}
 for ambulancia in ambulancias:
-    if ambulancia == "Ambulancia_11":
-        ambulancia_avanzada[ambulancia] = 1
+    if ambulancia == "ambulancia_11":
+        k_a[ambulancia] = 1
     else:
-        ambulancia_avanzada[ambulancia] = 0
+        k_a[ambulancia] = 0
 
 # -----------------------------------------------------------------
 
 # Pacientes (preliminar) ------------------------------------------
 
-ubicacion_pacientes = {i: {} for i in range(1, 26)}
+c_pg = {f"paciente_{i}": {} for i in range(1, 26)}
 
 with open("conjuntos/pacientes_ubicacion.csv", "r", encoding="utf-8") as file:
     csv_reader = csv.reader(file, delimiter=",")
@@ -168,25 +180,61 @@ with open("conjuntos/pacientes_ubicacion.csv", "r", encoding="utf-8") as file:
         if aux == 0:
             aux = 1
         else:
-            ubicacion_pacientes[int(paciente[0])]["lat"] = float(paciente[1])
-            ubicacion_pacientes[int(paciente[0])]["long"] = float(paciente[1])
+            c_pg[f"paciente_{int(paciente[0])}"]["lat"] = float(paciente[1])
+            c_pg[f"paciente_{int(paciente[0])}"]["long"] = float(paciente[2])
 
 
-pacientes = {i: {} for i in range(1, 26)}
+l_p = {f"paciente_{i}": {} for i in range(1, 26)}
 
-for i in range(200):
-    prestacion_r = choice(list(prestaciones.keys()))
-    centro_r = choice(centros)
-    periodo_r = choice(list(periodos.keys()))
-    prioridad_r = choice(prioridades)
-    solicita_privada_r = choice(solicita_privada)
-    pacientes.append((prestacion_r, centro_r, periodo_r, prioridad_r,
-                      solicita_privada_r))
+with open("conjuntos/paciente_privada.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=",")
+    aux = 0
+    for paciente in csv_reader:
+        if aux == 0:
+            aux = 1
+        else:
+            l_p[f"paciente_{int(paciente[0])}"] = int(paciente[1])
+
+
+v_p = {f"paciente_{i}": {} for i in range(1, 26)}
+
+with open("conjuntos/prioridad_paciente.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=",")
+    aux = 0
+    for paciente in csv_reader:
+        if aux == 0:
+            aux = 1
+        else:
+            v_p[f"paciente_{int(paciente[0])}"] = int(paciente[1])
+
+
+u_h = {f"paciente_{i}": {} for i in range(1, 28)}
+
+with open("conjuntos/privado_publico.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=",")
+    aux = 0
+    for paciente in csv_reader:
+        if aux == 0:
+            aux = 1
+        else:
+            u_h[f"paciente_{int(paciente[0])}"] = int(paciente[1])
+
+
+# pacientes = {i: {} for i in range(1, 26)}
+
+# for i in range(200):
+#     prestacion_r = choice(list(prestaciones.keys()))
+#     centro_r = choice(centros)
+#     periodo_r = choice(list(periodos.keys()))
+#     prioridad_r = choice(prioridades)
+#     solicita_privada_r = choice(solicita_privada)
+#     pacientes.append((prestacion_r, centro_r, periodo_r, prioridad_r,
+#                       solicita_privada_r))
 
 
 # ------------------ Tiempos de Traslado ----------------------------
 
-dia_base = datetime(2019, 10, 13, 0, 0)  # Día en el que empezamos.
+dia_base = datetime(2019, 11, 13, 0, 0)  # Día en el que empezamos.
 tiempo_base = int(time.mktime(dia_base.timetuple()))
 
 
@@ -196,11 +244,39 @@ def calc_departure(periodo):
                                       periodos[periodo][1]))
 
 
-def duracion(google_output):
-    """Retorna tiempo en segundos del trayecto ingresado."""
-    return int(google_output["duration"]["value"])
+def duracion(origen_, destino_, tiempo):
+    """Entrega el output de google."""
+    g_out = gmaps.distance_matrix(origen_,
+                                  destino_,
+                                  departure_time=tiempo)['rows'][0]['elements'][0]
+    print(g_out)
+    if g_out == {"status": "ZERO_RESULTS"}:
+        return float("inf")
+    else:
+        return int(g_out["duration_in_traffic"]["value"])
+
 
 # --------------------------------------------------------------------
+
+periodo_accidente = {f"paciente__{i}": {} for i in range(1, 26)}
+with open("conjuntos/periodo_accidente.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=",")
+    for nro_paciente, periodo in csv_reader:
+        periodo_accidente[f"paciente_{nro_paciente}"] = periodo
+
+
+d_bgt = {f"paciente_{i}": {} for i in range(1, 26)}
+f_hgt = {f"paciente_{i}": {} for i in range(1, 26)}
+
+for paciente, latlong in c_pg.items():
+    inicio = calc_departure(periodo_accidente[paciente])
+    loc_paciente = (latlong["lat"], latlong["long"])
+    for base, loc_base in localizacion_bases.items():
+        # d_bgt[paciente][base] = duracion(loc_base, loc_paciente, inicio)
+        pass
+    for centro, latlong in centros.items():
+        loc_centro = (latlong["lat"], latlong["long"])
+        f_hgt[paciente][centro] = duracion(loc_paciente, loc_centro, inicio)
 
 
 # origen_lat = -32.81699
