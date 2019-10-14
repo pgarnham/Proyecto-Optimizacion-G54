@@ -155,3 +155,1292 @@ Solution count 1: 0
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 19:10:10
+
+Academic license - for non-commercial use only
+Optimize a model with 1224 rows, 302832 columns and 75600 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 2151960.0000
+Presolve removed 1224 rows and 302832 columns
+Presolve time: 0.14s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.23 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 696264 2.15196e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.962640000000e+05, best bound 6.962640000000e+05, gap 0.0000%
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 19:17:19
+
+Academic license - for non-commercial use only
+Optimize a model with 14424 rows, 302832 columns and 950400 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.05s
+
+Explored 0 nodes (0 simplex iterations) in 0.12 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 19:20:02
+
+Academic license - for non-commercial use only
+Optimize a model with 1242 rows, 302832 columns and 86400 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 2158248.0000
+Presolve removed 1242 rows and 302832 columns
+Presolve time: 0.11s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.19 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 705744 2.15825e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.057440000000e+05, best bound 7.057440000000e+05, gap 0.0000%
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 19:22:59
+
+Academic license - for non-commercial use only
+Optimize a model with 1266 rows, 302832 columns and 97632 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 2155296.0000
+Presolve removed 1266 rows and 302832 columns
+Presolve time: 0.10s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.18 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 700656 2.1553e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.006560000000e+05, best bound 7.006560000000e+05, gap 0.0000%
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 19:27:28
+
+Academic license - for non-commercial use only
+Optimize a model with 12066 rows, 302832 columns and 400032 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 2162376.0000
+Presolve removed 12066 rows and 302832 columns
+Presolve time: 0.14s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.23 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 718656 2.16238e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.186560000000e+05, best bound 7.186560000000e+05, gap 0.0000%
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 19:29:38
+
+Academic license - for non-commercial use only
+Optimize a model with 12066 rows, 302832 columns and 400032 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 2154480.0000
+Presolve removed 12066 rows and 302832 columns
+Presolve time: 0.14s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.23 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 697296 2.15448e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.972960000000e+05, best bound 6.972960000000e+05, gap 0.0000%
+
+    Variable            X 
+-------------------------
+y_00.00-00.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_00.00-00.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_00.00-00.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_00.00-00.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_00.00-00.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_01.00-01.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_01.00-01.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_01.00-01.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_01.00-01.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_01.00-01.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_02.00-02.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_02.00-02.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_02.00-02.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_02.00-02.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_02.00-02.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_03.00-03.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_03.00-03.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_03.00-03.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_03.00-03.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_03.00-03.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_04.00-04.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_04.00-04.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_04.00-04.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_04.00-04.59_ambulancia_5_paciente_20_CLINICA Los Carrera            1 
+y_04.00-04.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_05.00-05.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_05.00-05.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_05.00-05.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_05.00-05.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_05.00-05.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_06.00-06.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_06.00-06.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_06.00-06.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_06.00-06.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_06.00-06.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_07.00-07.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_07.00-07.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_07.00-07.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_07.00-07.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_07.00-07.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_08.00-08.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_08.00-08.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_08.00-08.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_08.00-08.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_08.00-08.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_09.00-09.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_09.00-09.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_09.00-09.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_09.00-09.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_09.00-09.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_10.00-10.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_10.00-10.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_10.00-10.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_10.00-10.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_10.00-10.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_11.00-11.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_11.00-11.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_11.00-11.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_11.00-11.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_11.00-11.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_12.00-12.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_12.00-12.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_12.00-12.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_12.00-12.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_12.00-12.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_13.00-13.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_13.00-13.59_ambulancia_3_paciente_19_CLINICA Los Carrera            1 
+y_13.00-13.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_13.00-13.59_ambulancia_6_paciente_20_CLINICA Los Carrera            1 
+y_13.00-13.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_14.00-14.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_14.00-14.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_14.00-14.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_14.00-14.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_14.00-14.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_15.00-15.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_15.00-15.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_15.00-15.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_15.00-15.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_15.00-15.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_16.00-16.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_16.00-16.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_16.00-16.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_16.00-16.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_16.00-16.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_17.00-17.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_17.00-17.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_17.00-17.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_17.00-17.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_17.00-17.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_18.00-18.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_18.00-18.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_18.00-18.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_18.00-18.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_18.00-18.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_19.00-19.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_19.00-19.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_19.00-19.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_19.00-19.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_19.00-19.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_20.00-20.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_20.00-20.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_20.00-20.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_20.00-20.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_20.00-20.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_21.00-21.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_21.00-21.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_21.00-21.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_21.00-21.59_ambulancia_6_paciente_20_CLINICA Los Carrera            1 
+y_21.00-21.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_22.00-22.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_22.00-22.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_22.00-22.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_22.00-22.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_22.00-22.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_23.00-23.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_23.00-23.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_23.00-23.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_23.00-23.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_23.00-23.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+s_00.00-00.59_ambulancia_1            1 
+s_00.00-00.59_ambulancia_2            1 
+s_00.00-00.59_ambulancia_3            1 
+s_00.00-00.59_ambulancia_4            1 
+s_00.00-00.59_ambulancia_5            1 
+s_00.00-00.59_ambulancia_6            1 
+s_00.00-00.59_ambulancia_7            1 
+s_00.00-00.59_ambulancia_8            1 
+s_00.00-00.59_ambulancia_9            1 
+s_00.00-00.59_ambulancia_10            1 
+s_00.00-00.59_ambulancia_11            1 
+s_00.00-00.59_ambulancia_12            1 
+s_00.00-00.59_ambulancia_13            1 
+s_00.00-00.59_ambulancia_14            1 
+s_00.00-00.59_ambulancia_15            1 
+s_00.00-00.59_ambulancia_16            1 
+s_00.00-00.59_ambulancia_17            1 
+s_00.00-00.59_ambulancia_18            1 
+s_01.00-01.59_ambulancia_1            1 
+s_01.00-01.59_ambulancia_2            1 
+s_01.00-01.59_ambulancia_3            1 
+s_01.00-01.59_ambulancia_4            1 
+s_01.00-01.59_ambulancia_5            1 
+s_01.00-01.59_ambulancia_6            1 
+s_01.00-01.59_ambulancia_7            1 
+s_01.00-01.59_ambulancia_8            1 
+s_01.00-01.59_ambulancia_9            1 
+s_01.00-01.59_ambulancia_10            1 
+s_01.00-01.59_ambulancia_11            1 
+s_01.00-01.59_ambulancia_12            1 
+s_01.00-01.59_ambulancia_13            1 
+s_01.00-01.59_ambulancia_14            1 
+s_01.00-01.59_ambulancia_15            1 
+s_01.00-01.59_ambulancia_16            1 
+s_01.00-01.59_ambulancia_17            1 
+s_01.00-01.59_ambulancia_18            1 
+s_02.00-02.59_ambulancia_1            1 
+s_02.00-02.59_ambulancia_2            1 
+s_02.00-02.59_ambulancia_3            1 
+s_02.00-02.59_ambulancia_4            1 
+s_02.00-02.59_ambulancia_5            1 
+s_02.00-02.59_ambulancia_6            1 
+s_02.00-02.59_ambulancia_7            1 
+s_02.00-02.59_ambulancia_8            1 
+s_02.00-02.59_ambulancia_9            1 
+s_02.00-02.59_ambulancia_10            1 
+s_02.00-02.59_ambulancia_11            1 
+s_02.00-02.59_ambulancia_12            1 
+s_02.00-02.59_ambulancia_13            1 
+s_02.00-02.59_ambulancia_14            1 
+s_02.00-02.59_ambulancia_15            1 
+s_02.00-02.59_ambulancia_16            1 
+s_02.00-02.59_ambulancia_17            1 
+s_02.00-02.59_ambulancia_18            1 
+s_03.00-03.59_ambulancia_1            1 
+s_03.00-03.59_ambulancia_2            1 
+s_03.00-03.59_ambulancia_3            1 
+s_03.00-03.59_ambulancia_4            1 
+s_03.00-03.59_ambulancia_5            1 
+s_03.00-03.59_ambulancia_6            1 
+s_03.00-03.59_ambulancia_7            1 
+s_03.00-03.59_ambulancia_8            1 
+s_03.00-03.59_ambulancia_9            1 
+s_03.00-03.59_ambulancia_10            1 
+s_03.00-03.59_ambulancia_11            1 
+s_03.00-03.59_ambulancia_12            1 
+s_03.00-03.59_ambulancia_13            1 
+s_03.00-03.59_ambulancia_14            1 
+s_03.00-03.59_ambulancia_15            1 
+s_03.00-03.59_ambulancia_16            1 
+s_03.00-03.59_ambulancia_17            1 
+s_03.00-03.59_ambulancia_18            1 
+s_04.00-04.59_ambulancia_1            1 
+s_04.00-04.59_ambulancia_2            1 
+s_04.00-04.59_ambulancia_3            1 
+s_04.00-04.59_ambulancia_4            1 
+s_04.00-04.59_ambulancia_5            1 
+s_04.00-04.59_ambulancia_6            1 
+s_04.00-04.59_ambulancia_7            1 
+s_04.00-04.59_ambulancia_8            1 
+s_04.00-04.59_ambulancia_9            1 
+s_04.00-04.59_ambulancia_10            1 
+s_04.00-04.59_ambulancia_11            1 
+s_04.00-04.59_ambulancia_12            1 
+s_04.00-04.59_ambulancia_13            1 
+s_04.00-04.59_ambulancia_14            1 
+s_04.00-04.59_ambulancia_15            1 
+s_04.00-04.59_ambulancia_16            1 
+s_04.00-04.59_ambulancia_17            1 
+s_04.00-04.59_ambulancia_18            1 
+s_05.00-05.59_ambulancia_1            1 
+s_05.00-05.59_ambulancia_2            1 
+s_05.00-05.59_ambulancia_3            1 
+s_05.00-05.59_ambulancia_4            1 
+s_05.00-05.59_ambulancia_5            1 
+s_05.00-05.59_ambulancia_6            1 
+s_05.00-05.59_ambulancia_7            1 
+s_05.00-05.59_ambulancia_8            1 
+s_05.00-05.59_ambulancia_9            1 
+s_05.00-05.59_ambulancia_10            1 
+s_05.00-05.59_ambulancia_11            1 
+s_05.00-05.59_ambulancia_12            1 
+s_05.00-05.59_ambulancia_13            1 
+s_05.00-05.59_ambulancia_14            1 
+s_05.00-05.59_ambulancia_15            1 
+s_05.00-05.59_ambulancia_16            1 
+s_05.00-05.59_ambulancia_17            1 
+s_05.00-05.59_ambulancia_18            1 
+s_06.00-06.59_ambulancia_1            1 
+s_06.00-06.59_ambulancia_2            1 
+s_06.00-06.59_ambulancia_3            1 
+s_06.00-06.59_ambulancia_4            1 
+s_06.00-06.59_ambulancia_5            1 
+s_06.00-06.59_ambulancia_6            1 
+s_06.00-06.59_ambulancia_7            1 
+s_06.00-06.59_ambulancia_8            1 
+s_06.00-06.59_ambulancia_9            1 
+s_06.00-06.59_ambulancia_10            1 
+s_06.00-06.59_ambulancia_11            1 
+s_06.00-06.59_ambulancia_12            1 
+s_06.00-06.59_ambulancia_13            1 
+s_06.00-06.59_ambulancia_14            1 
+s_06.00-06.59_ambulancia_15            1 
+s_06.00-06.59_ambulancia_16            1 
+s_06.00-06.59_ambulancia_17            1 
+s_06.00-06.59_ambulancia_18            1 
+s_07.00-07.59_ambulancia_1            1 
+s_07.00-07.59_ambulancia_2            1 
+s_07.00-07.59_ambulancia_3            1 
+s_07.00-07.59_ambulancia_4            1 
+s_07.00-07.59_ambulancia_5            1 
+s_07.00-07.59_ambulancia_6            1 
+s_07.00-07.59_ambulancia_7            1 
+s_07.00-07.59_ambulancia_8            1 
+s_07.00-07.59_ambulancia_9            1 
+s_07.00-07.59_ambulancia_10            1 
+s_07.00-07.59_ambulancia_11            1 
+s_07.00-07.59_ambulancia_12            1 
+s_07.00-07.59_ambulancia_13            1 
+s_07.00-07.59_ambulancia_14            1 
+s_07.00-07.59_ambulancia_15            1 
+s_07.00-07.59_ambulancia_16            1 
+s_07.00-07.59_ambulancia_17            1 
+s_07.00-07.59_ambulancia_18            1 
+s_08.00-08.59_ambulancia_1            1 
+s_08.00-08.59_ambulancia_2            1 
+s_08.00-08.59_ambulancia_3            1 
+s_08.00-08.59_ambulancia_4            1 
+s_08.00-08.59_ambulancia_5            1 
+s_08.00-08.59_ambulancia_6            1 
+s_08.00-08.59_ambulancia_7            1 
+s_08.00-08.59_ambulancia_8            1 
+s_08.00-08.59_ambulancia_9            1 
+s_08.00-08.59_ambulancia_10            1 
+s_08.00-08.59_ambulancia_11            1 
+s_08.00-08.59_ambulancia_12            1 
+s_08.00-08.59_ambulancia_13            1 
+s_08.00-08.59_ambulancia_14            1 
+s_08.00-08.59_ambulancia_15            1 
+s_08.00-08.59_ambulancia_16            1 
+s_08.00-08.59_ambulancia_17            1 
+s_08.00-08.59_ambulancia_18            1 
+s_09.00-09.59_ambulancia_1            1 
+s_09.00-09.59_ambulancia_2            1 
+s_09.00-09.59_ambulancia_3            1 
+s_09.00-09.59_ambulancia_4            1 
+s_09.00-09.59_ambulancia_5            1 
+s_09.00-09.59_ambulancia_6            1 
+s_09.00-09.59_ambulancia_7            1 
+s_09.00-09.59_ambulancia_8            1 
+s_09.00-09.59_ambulancia_9            1 
+s_09.00-09.59_ambulancia_10            1 
+s_09.00-09.59_ambulancia_11            1 
+s_09.00-09.59_ambulancia_12            1 
+s_09.00-09.59_ambulancia_13            1 
+s_09.00-09.59_ambulancia_14            1 
+s_09.00-09.59_ambulancia_15            1 
+s_09.00-09.59_ambulancia_16            1 
+s_09.00-09.59_ambulancia_17            1 
+s_09.00-09.59_ambulancia_18            1 
+s_10.00-10.59_ambulancia_1            1 
+s_10.00-10.59_ambulancia_2            1 
+s_10.00-10.59_ambulancia_3            1 
+s_10.00-10.59_ambulancia_4            1 
+s_10.00-10.59_ambulancia_5            1 
+s_10.00-10.59_ambulancia_6            1 
+s_10.00-10.59_ambulancia_7            1 
+s_10.00-10.59_ambulancia_8            1 
+s_10.00-10.59_ambulancia_9            1 
+s_10.00-10.59_ambulancia_10            1 
+s_10.00-10.59_ambulancia_11            1 
+s_10.00-10.59_ambulancia_12            1 
+s_10.00-10.59_ambulancia_13            1 
+s_10.00-10.59_ambulancia_14            1 
+s_10.00-10.59_ambulancia_15            1 
+s_10.00-10.59_ambulancia_16            1 
+s_10.00-10.59_ambulancia_17            1 
+s_10.00-10.59_ambulancia_18            1 
+s_11.00-11.59_ambulancia_1            1 
+s_11.00-11.59_ambulancia_2            1 
+s_11.00-11.59_ambulancia_3            1 
+s_11.00-11.59_ambulancia_4            1 
+s_11.00-11.59_ambulancia_5            1 
+s_11.00-11.59_ambulancia_6            1 
+s_11.00-11.59_ambulancia_7            1 
+s_11.00-11.59_ambulancia_8            1 
+s_11.00-11.59_ambulancia_9            1 
+s_11.00-11.59_ambulancia_10            1 
+s_11.00-11.59_ambulancia_11            1 
+s_11.00-11.59_ambulancia_12            1 
+s_11.00-11.59_ambulancia_13            1 
+s_11.00-11.59_ambulancia_14            1 
+s_11.00-11.59_ambulancia_15            1 
+s_11.00-11.59_ambulancia_16            1 
+s_11.00-11.59_ambulancia_17            1 
+s_11.00-11.59_ambulancia_18            1 
+s_12.00-12.59_ambulancia_1            1 
+s_12.00-12.59_ambulancia_2            1 
+s_12.00-12.59_ambulancia_3            1 
+s_12.00-12.59_ambulancia_4            1 
+s_12.00-12.59_ambulancia_5            1 
+s_12.00-12.59_ambulancia_6            1 
+s_12.00-12.59_ambulancia_7            1 
+s_12.00-12.59_ambulancia_8            1 
+s_12.00-12.59_ambulancia_9            1 
+s_12.00-12.59_ambulancia_10            1 
+s_12.00-12.59_ambulancia_11            1 
+s_12.00-12.59_ambulancia_12            1 
+s_12.00-12.59_ambulancia_13            1 
+s_12.00-12.59_ambulancia_14            1 
+s_12.00-12.59_ambulancia_15            1 
+s_12.00-12.59_ambulancia_16            1 
+s_12.00-12.59_ambulancia_17            1 
+s_12.00-12.59_ambulancia_18            1 
+s_13.00-13.59_ambulancia_1            1 
+s_13.00-13.59_ambulancia_2            1 
+s_13.00-13.59_ambulancia_3            1 
+s_13.00-13.59_ambulancia_4            1 
+s_13.00-13.59_ambulancia_5            1 
+s_13.00-13.59_ambulancia_6            1 
+s_13.00-13.59_ambulancia_7            1 
+s_13.00-13.59_ambulancia_8            1 
+s_13.00-13.59_ambulancia_9            1 
+s_13.00-13.59_ambulancia_10            1 
+s_13.00-13.59_ambulancia_11            1 
+s_13.00-13.59_ambulancia_12            1 
+s_13.00-13.59_ambulancia_13            1 
+s_13.00-13.59_ambulancia_14            1 
+s_13.00-13.59_ambulancia_15            1 
+s_13.00-13.59_ambulancia_16            1 
+s_13.00-13.59_ambulancia_17            1 
+s_13.00-13.59_ambulancia_18            1 
+s_14.00-14.59_ambulancia_1            1 
+s_14.00-14.59_ambulancia_2            1 
+s_14.00-14.59_ambulancia_3            1 
+s_14.00-14.59_ambulancia_4            1 
+s_14.00-14.59_ambulancia_5            1 
+s_14.00-14.59_ambulancia_6            1 
+s_14.00-14.59_ambulancia_7            1 
+s_14.00-14.59_ambulancia_8            1 
+s_14.00-14.59_ambulancia_9            1 
+s_14.00-14.59_ambulancia_10            1 
+s_14.00-14.59_ambulancia_11            1 
+s_14.00-14.59_ambulancia_12            1 
+s_14.00-14.59_ambulancia_13            1 
+s_14.00-14.59_ambulancia_14            1 
+s_14.00-14.59_ambulancia_15            1 
+s_14.00-14.59_ambulancia_16            1 
+s_14.00-14.59_ambulancia_17            1 
+s_14.00-14.59_ambulancia_18            1 
+s_15.00-15.59_ambulancia_1            1 
+s_15.00-15.59_ambulancia_2            1 
+s_15.00-15.59_ambulancia_3            1 
+s_15.00-15.59_ambulancia_4            1 
+s_15.00-15.59_ambulancia_5            1 
+s_15.00-15.59_ambulancia_6            1 
+s_15.00-15.59_ambulancia_7            1 
+s_15.00-15.59_ambulancia_8            1 
+s_15.00-15.59_ambulancia_9            1 
+s_15.00-15.59_ambulancia_10            1 
+s_15.00-15.59_ambulancia_11            1 
+s_15.00-15.59_ambulancia_12            1 
+s_15.00-15.59_ambulancia_13            1 
+s_15.00-15.59_ambulancia_14            1 
+s_15.00-15.59_ambulancia_15            1 
+s_15.00-15.59_ambulancia_16            1 
+s_15.00-15.59_ambulancia_17            1 
+s_15.00-15.59_ambulancia_18            1 
+s_16.00-16.59_ambulancia_1            1 
+s_16.00-16.59_ambulancia_2            1 
+s_16.00-16.59_ambulancia_3            1 
+s_16.00-16.59_ambulancia_4            1 
+s_16.00-16.59_ambulancia_5            1 
+s_16.00-16.59_ambulancia_6            1 
+s_16.00-16.59_ambulancia_7            1 
+s_16.00-16.59_ambulancia_8            1 
+s_16.00-16.59_ambulancia_9            1 
+s_16.00-16.59_ambulancia_10            1 
+s_16.00-16.59_ambulancia_11            1 
+s_16.00-16.59_ambulancia_12            1 
+s_16.00-16.59_ambulancia_13            1 
+s_16.00-16.59_ambulancia_14            1 
+s_16.00-16.59_ambulancia_15            1 
+s_16.00-16.59_ambulancia_16            1 
+s_16.00-16.59_ambulancia_17            1 
+s_16.00-16.59_ambulancia_18            1 
+s_17.00-17.59_ambulancia_1            1 
+s_17.00-17.59_ambulancia_2            1 
+s_17.00-17.59_ambulancia_3            1 
+s_17.00-17.59_ambulancia_4            1 
+s_17.00-17.59_ambulancia_5            1 
+s_17.00-17.59_ambulancia_6            1 
+s_17.00-17.59_ambulancia_7            1 
+s_17.00-17.59_ambulancia_8            1 
+s_17.00-17.59_ambulancia_9            1 
+s_17.00-17.59_ambulancia_10            1 
+s_17.00-17.59_ambulancia_11            1 
+s_17.00-17.59_ambulancia_12            1 
+s_17.00-17.59_ambulancia_13            1 
+s_17.00-17.59_ambulancia_14            1 
+s_17.00-17.59_ambulancia_15            1 
+s_17.00-17.59_ambulancia_16            1 
+s_17.00-17.59_ambulancia_17            1 
+s_17.00-17.59_ambulancia_18            1 
+s_18.00-18.59_ambulancia_1            1 
+s_18.00-18.59_ambulancia_2            1 
+s_18.00-18.59_ambulancia_3            1 
+s_18.00-18.59_ambulancia_4            1 
+s_18.00-18.59_ambulancia_5            1 
+s_18.00-18.59_ambulancia_6            1 
+s_18.00-18.59_ambulancia_7            1 
+s_18.00-18.59_ambulancia_8            1 
+s_18.00-18.59_ambulancia_9            1 
+s_18.00-18.59_ambulancia_10            1 
+s_18.00-18.59_ambulancia_11            1 
+s_18.00-18.59_ambulancia_12            1 
+s_18.00-18.59_ambulancia_13            1 
+s_18.00-18.59_ambulancia_14            1 
+s_18.00-18.59_ambulancia_15            1 
+s_18.00-18.59_ambulancia_16            1 
+s_18.00-18.59_ambulancia_17            1 
+s_18.00-18.59_ambulancia_18            1 
+s_19.00-19.59_ambulancia_1            1 
+s_19.00-19.59_ambulancia_2            1 
+s_19.00-19.59_ambulancia_3            1 
+s_19.00-19.59_ambulancia_4            1 
+s_19.00-19.59_ambulancia_5            1 
+s_19.00-19.59_ambulancia_6            1 
+s_19.00-19.59_ambulancia_7            1 
+s_19.00-19.59_ambulancia_8            1 
+s_19.00-19.59_ambulancia_9            1 
+s_19.00-19.59_ambulancia_10            1 
+s_19.00-19.59_ambulancia_11            1 
+s_19.00-19.59_ambulancia_12            1 
+s_19.00-19.59_ambulancia_13            1 
+s_19.00-19.59_ambulancia_14            1 
+s_19.00-19.59_ambulancia_15            1 
+s_19.00-19.59_ambulancia_16            1 
+s_19.00-19.59_ambulancia_17            1 
+s_19.00-19.59_ambulancia_18            1 
+s_20.00-20.59_ambulancia_1            1 
+s_20.00-20.59_ambulancia_2            1 
+s_20.00-20.59_ambulancia_3            1 
+s_20.00-20.59_ambulancia_4            1 
+s_20.00-20.59_ambulancia_5            1 
+s_20.00-20.59_ambulancia_6            1 
+s_20.00-20.59_ambulancia_7            1 
+s_20.00-20.59_ambulancia_8            1 
+s_20.00-20.59_ambulancia_9            1 
+s_20.00-20.59_ambulancia_10            1 
+s_20.00-20.59_ambulancia_11            1 
+s_20.00-20.59_ambulancia_12            1 
+s_20.00-20.59_ambulancia_13            1 
+s_20.00-20.59_ambulancia_14            1 
+s_20.00-20.59_ambulancia_15            1 
+s_20.00-20.59_ambulancia_16            1 
+s_20.00-20.59_ambulancia_17            1 
+s_20.00-20.59_ambulancia_18            1 
+s_21.00-21.59_ambulancia_1            1 
+s_21.00-21.59_ambulancia_2            1 
+s_21.00-21.59_ambulancia_3            1 
+s_21.00-21.59_ambulancia_4            1 
+s_21.00-21.59_ambulancia_5            1 
+s_21.00-21.59_ambulancia_6            1 
+s_21.00-21.59_ambulancia_7            1 
+s_21.00-21.59_ambulancia_8            1 
+s_21.00-21.59_ambulancia_9            1 
+s_21.00-21.59_ambulancia_10            1 
+s_21.00-21.59_ambulancia_11            1 
+s_21.00-21.59_ambulancia_12            1 
+s_21.00-21.59_ambulancia_13            1 
+s_21.00-21.59_ambulancia_14            1 
+s_21.00-21.59_ambulancia_15            1 
+s_21.00-21.59_ambulancia_16            1 
+s_21.00-21.59_ambulancia_17            1 
+s_21.00-21.59_ambulancia_18            1 
+s_22.00-22.59_ambulancia_1            1 
+s_22.00-22.59_ambulancia_2            1 
+s_22.00-22.59_ambulancia_3            1 
+s_22.00-22.59_ambulancia_4            1 
+s_22.00-22.59_ambulancia_5            1 
+s_22.00-22.59_ambulancia_6            1 
+s_22.00-22.59_ambulancia_7            1 
+s_22.00-22.59_ambulancia_8            1 
+s_22.00-22.59_ambulancia_9            1 
+s_22.00-22.59_ambulancia_10            1 
+s_22.00-22.59_ambulancia_11            1 
+s_22.00-22.59_ambulancia_12            1 
+s_22.00-22.59_ambulancia_13            1 
+s_22.00-22.59_ambulancia_14            1 
+s_22.00-22.59_ambulancia_15            1 
+s_22.00-22.59_ambulancia_16            1 
+s_22.00-22.59_ambulancia_17            1 
+s_22.00-22.59_ambulancia_18            1 
+s_23.00-23.59_ambulancia_1            1 
+s_23.00-23.59_ambulancia_2            1 
+s_23.00-23.59_ambulancia_3            1 
+s_23.00-23.59_ambulancia_4            1 
+s_23.00-23.59_ambulancia_5            1 
+s_23.00-23.59_ambulancia_6            1 
+s_23.00-23.59_ambulancia_7            1 
+s_23.00-23.59_ambulancia_8            1 
+s_23.00-23.59_ambulancia_9            1 
+s_23.00-23.59_ambulancia_10            1 
+s_23.00-23.59_ambulancia_11            1 
+s_23.00-23.59_ambulancia_12            1 
+s_23.00-23.59_ambulancia_13            1 
+s_23.00-23.59_ambulancia_14            1 
+s_23.00-23.59_ambulancia_15            1 
+s_23.00-23.59_ambulancia_16            1 
+s_23.00-23.59_ambulancia_17            1 
+s_23.00-23.59_ambulancia_18            1 
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 19:33:56
+
+Academic license - for non-commercial use only
+Optimize a model with 12066 rows, 302832 columns and 400032 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 2153568.0000
+Presolve removed 12066 rows and 302832 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.25 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 704808 2.15357e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.048080000000e+05, best bound 7.048080000000e+05, gap 0.0000%
+
+    Variable            X 
+-------------------------
+y_00.00-00.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_00.00-00.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_00.00-00.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_00.00-00.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_00.00-00.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_01.00-01.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_01.00-01.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_01.00-01.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_01.00-01.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_01.00-01.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_02.00-02.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_02.00-02.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_02.00-02.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_02.00-02.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_02.00-02.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_03.00-03.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_03.00-03.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_03.00-03.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_03.00-03.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_03.00-03.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_04.00-04.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_04.00-04.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_04.00-04.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_04.00-04.59_ambulancia_5_paciente_20_CLINICA Los Carrera            1 
+y_04.00-04.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_05.00-05.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_05.00-05.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_05.00-05.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_05.00-05.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_05.00-05.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_06.00-06.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_06.00-06.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_06.00-06.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_06.00-06.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_06.00-06.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_07.00-07.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_07.00-07.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_07.00-07.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_07.00-07.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_07.00-07.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_08.00-08.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_08.00-08.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_08.00-08.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_08.00-08.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_08.00-08.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_09.00-09.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_09.00-09.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_09.00-09.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_09.00-09.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_09.00-09.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_10.00-10.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_10.00-10.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_10.00-10.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_10.00-10.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_10.00-10.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_11.00-11.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_11.00-11.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_11.00-11.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_11.00-11.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_11.00-11.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_12.00-12.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_12.00-12.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_12.00-12.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_12.00-12.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_12.00-12.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_13.00-13.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_13.00-13.59_ambulancia_3_paciente_19_CLINICA Los Carrera            1 
+y_13.00-13.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_13.00-13.59_ambulancia_6_paciente_20_CLINICA Los Carrera            1 
+y_13.00-13.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_14.00-14.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_14.00-14.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_14.00-14.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_14.00-14.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_14.00-14.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_15.00-15.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_15.00-15.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_15.00-15.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_15.00-15.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_15.00-15.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_16.00-16.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_16.00-16.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_16.00-16.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_16.00-16.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_16.00-16.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_17.00-17.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_17.00-17.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_17.00-17.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_17.00-17.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_17.00-17.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_18.00-18.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_18.00-18.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_18.00-18.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_18.00-18.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_18.00-18.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_19.00-19.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_19.00-19.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_19.00-19.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_19.00-19.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_19.00-19.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_20.00-20.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_20.00-20.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_20.00-20.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_20.00-20.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_20.00-20.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_21.00-21.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_21.00-21.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_21.00-21.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_21.00-21.59_ambulancia_6_paciente_20_CLINICA Los Carrera            1 
+y_21.00-21.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_22.00-22.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_22.00-22.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_22.00-22.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_22.00-22.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_22.00-22.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_23.00-23.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_23.00-23.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_23.00-23.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_23.00-23.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_23.00-23.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+s_00.00-00.59_ambulancia_1            1 
+s_00.00-00.59_ambulancia_2            1 
+s_00.00-00.59_ambulancia_3            1 
+s_00.00-00.59_ambulancia_4            1 
+s_00.00-00.59_ambulancia_5            1 
+s_00.00-00.59_ambulancia_6            1 
+s_00.00-00.59_ambulancia_7            1 
+s_00.00-00.59_ambulancia_8            1 
+s_00.00-00.59_ambulancia_9            1 
+s_00.00-00.59_ambulancia_10            1 
+s_00.00-00.59_ambulancia_11            1 
+s_00.00-00.59_ambulancia_12            1 
+s_00.00-00.59_ambulancia_13            1 
+s_00.00-00.59_ambulancia_14            1 
+s_00.00-00.59_ambulancia_15            1 
+s_00.00-00.59_ambulancia_16            1 
+s_00.00-00.59_ambulancia_17            1 
+s_00.00-00.59_ambulancia_18            1 
+s_01.00-01.59_ambulancia_1            1 
+s_01.00-01.59_ambulancia_2            1 
+s_01.00-01.59_ambulancia_3            1 
+s_01.00-01.59_ambulancia_4            1 
+s_01.00-01.59_ambulancia_5            1 
+s_01.00-01.59_ambulancia_6            1 
+s_01.00-01.59_ambulancia_7            1 
+s_01.00-01.59_ambulancia_8            1 
+s_01.00-01.59_ambulancia_9            1 
+s_01.00-01.59_ambulancia_10            1 
+s_01.00-01.59_ambulancia_11            1 
+s_01.00-01.59_ambulancia_12            1 
+s_01.00-01.59_ambulancia_13            1 
+s_01.00-01.59_ambulancia_14            1 
+s_01.00-01.59_ambulancia_15            1 
+s_01.00-01.59_ambulancia_16            1 
+s_01.00-01.59_ambulancia_17            1 
+s_01.00-01.59_ambulancia_18            1 
+s_02.00-02.59_ambulancia_1            1 
+s_02.00-02.59_ambulancia_2            1 
+s_02.00-02.59_ambulancia_3            1 
+s_02.00-02.59_ambulancia_4            1 
+s_02.00-02.59_ambulancia_5            1 
+s_02.00-02.59_ambulancia_6            1 
+s_02.00-02.59_ambulancia_7            1 
+s_02.00-02.59_ambulancia_8            1 
+s_02.00-02.59_ambulancia_9            1 
+s_02.00-02.59_ambulancia_10            1 
+s_02.00-02.59_ambulancia_11            1 
+s_02.00-02.59_ambulancia_12            1 
+s_02.00-02.59_ambulancia_13            1 
+s_02.00-02.59_ambulancia_14            1 
+s_02.00-02.59_ambulancia_15            1 
+s_02.00-02.59_ambulancia_16            1 
+s_02.00-02.59_ambulancia_17            1 
+s_02.00-02.59_ambulancia_18            1 
+s_03.00-03.59_ambulancia_1            1 
+s_03.00-03.59_ambulancia_2            1 
+s_03.00-03.59_ambulancia_3            1 
+s_03.00-03.59_ambulancia_4            1 
+s_03.00-03.59_ambulancia_5            1 
+s_03.00-03.59_ambulancia_6            1 
+s_03.00-03.59_ambulancia_7            1 
+s_03.00-03.59_ambulancia_8            1 
+s_03.00-03.59_ambulancia_9            1 
+s_03.00-03.59_ambulancia_10            1 
+s_03.00-03.59_ambulancia_11            1 
+s_03.00-03.59_ambulancia_12            1 
+s_03.00-03.59_ambulancia_13            1 
+s_03.00-03.59_ambulancia_14            1 
+s_03.00-03.59_ambulancia_15            1 
+s_03.00-03.59_ambulancia_16            1 
+s_03.00-03.59_ambulancia_17            1 
+s_03.00-03.59_ambulancia_18            1 
+s_04.00-04.59_ambulancia_1            1 
+s_04.00-04.59_ambulancia_2            1 
+s_04.00-04.59_ambulancia_3            1 
+s_04.00-04.59_ambulancia_4            1 
+s_04.00-04.59_ambulancia_5            1 
+s_04.00-04.59_ambulancia_6            1 
+s_04.00-04.59_ambulancia_7            1 
+s_04.00-04.59_ambulancia_8            1 
+s_04.00-04.59_ambulancia_9            1 
+s_04.00-04.59_ambulancia_10            1 
+s_04.00-04.59_ambulancia_11            1 
+s_04.00-04.59_ambulancia_12            1 
+s_04.00-04.59_ambulancia_13            1 
+s_04.00-04.59_ambulancia_14            1 
+s_04.00-04.59_ambulancia_15            1 
+s_04.00-04.59_ambulancia_16            1 
+s_04.00-04.59_ambulancia_17            1 
+s_04.00-04.59_ambulancia_18            1 
+s_05.00-05.59_ambulancia_1            1 
+s_05.00-05.59_ambulancia_2            1 
+s_05.00-05.59_ambulancia_3            1 
+s_05.00-05.59_ambulancia_4            1 
+s_05.00-05.59_ambulancia_5            1 
+s_05.00-05.59_ambulancia_6            1 
+s_05.00-05.59_ambulancia_7            1 
+s_05.00-05.59_ambulancia_8            1 
+s_05.00-05.59_ambulancia_9            1 
+s_05.00-05.59_ambulancia_10            1 
+s_05.00-05.59_ambulancia_11            1 
+s_05.00-05.59_ambulancia_12            1 
+s_05.00-05.59_ambulancia_13            1 
+s_05.00-05.59_ambulancia_14            1 
+s_05.00-05.59_ambulancia_15            1 
+s_05.00-05.59_ambulancia_16            1 
+s_05.00-05.59_ambulancia_17            1 
+s_05.00-05.59_ambulancia_18            1 
+s_06.00-06.59_ambulancia_1            1 
+s_06.00-06.59_ambulancia_2            1 
+s_06.00-06.59_ambulancia_3            1 
+s_06.00-06.59_ambulancia_4            1 
+s_06.00-06.59_ambulancia_5            1 
+s_06.00-06.59_ambulancia_6            1 
+s_06.00-06.59_ambulancia_7            1 
+s_06.00-06.59_ambulancia_8            1 
+s_06.00-06.59_ambulancia_9            1 
+s_06.00-06.59_ambulancia_10            1 
+s_06.00-06.59_ambulancia_11            1 
+s_06.00-06.59_ambulancia_12            1 
+s_06.00-06.59_ambulancia_13            1 
+s_06.00-06.59_ambulancia_14            1 
+s_06.00-06.59_ambulancia_15            1 
+s_06.00-06.59_ambulancia_16            1 
+s_06.00-06.59_ambulancia_17            1 
+s_06.00-06.59_ambulancia_18            1 
+s_07.00-07.59_ambulancia_1            1 
+s_07.00-07.59_ambulancia_2            1 
+s_07.00-07.59_ambulancia_3            1 
+s_07.00-07.59_ambulancia_4            1 
+s_07.00-07.59_ambulancia_5            1 
+s_07.00-07.59_ambulancia_6            1 
+s_07.00-07.59_ambulancia_7            1 
+s_07.00-07.59_ambulancia_8            1 
+s_07.00-07.59_ambulancia_9            1 
+s_07.00-07.59_ambulancia_10            1 
+s_07.00-07.59_ambulancia_11            1 
+s_07.00-07.59_ambulancia_12            1 
+s_07.00-07.59_ambulancia_13            1 
+s_07.00-07.59_ambulancia_14            1 
+s_07.00-07.59_ambulancia_15            1 
+s_07.00-07.59_ambulancia_16            1 
+s_07.00-07.59_ambulancia_17            1 
+s_07.00-07.59_ambulancia_18            1 
+s_08.00-08.59_ambulancia_1            1 
+s_08.00-08.59_ambulancia_2            1 
+s_08.00-08.59_ambulancia_3            1 
+s_08.00-08.59_ambulancia_4            1 
+s_08.00-08.59_ambulancia_5            1 
+s_08.00-08.59_ambulancia_6            1 
+s_08.00-08.59_ambulancia_7            1 
+s_08.00-08.59_ambulancia_8            1 
+s_08.00-08.59_ambulancia_9            1 
+s_08.00-08.59_ambulancia_10            1 
+s_08.00-08.59_ambulancia_11            1 
+s_08.00-08.59_ambulancia_12            1 
+s_08.00-08.59_ambulancia_13            1 
+s_08.00-08.59_ambulancia_14            1 
+s_08.00-08.59_ambulancia_15            1 
+s_08.00-08.59_ambulancia_16            1 
+s_08.00-08.59_ambulancia_17            1 
+s_08.00-08.59_ambulancia_18            1 
+s_09.00-09.59_ambulancia_1            1 
+s_09.00-09.59_ambulancia_2            1 
+s_09.00-09.59_ambulancia_3            1 
+s_09.00-09.59_ambulancia_4            1 
+s_09.00-09.59_ambulancia_5            1 
+s_09.00-09.59_ambulancia_6            1 
+s_09.00-09.59_ambulancia_7            1 
+s_09.00-09.59_ambulancia_8            1 
+s_09.00-09.59_ambulancia_9            1 
+s_09.00-09.59_ambulancia_10            1 
+s_09.00-09.59_ambulancia_11            1 
+s_09.00-09.59_ambulancia_12            1 
+s_09.00-09.59_ambulancia_13            1 
+s_09.00-09.59_ambulancia_14            1 
+s_09.00-09.59_ambulancia_15            1 
+s_09.00-09.59_ambulancia_16            1 
+s_09.00-09.59_ambulancia_17            1 
+s_09.00-09.59_ambulancia_18            1 
+s_10.00-10.59_ambulancia_1            1 
+s_10.00-10.59_ambulancia_2            1 
+s_10.00-10.59_ambulancia_3            1 
+s_10.00-10.59_ambulancia_4            1 
+s_10.00-10.59_ambulancia_5            1 
+s_10.00-10.59_ambulancia_6            1 
+s_10.00-10.59_ambulancia_7            1 
+s_10.00-10.59_ambulancia_8            1 
+s_10.00-10.59_ambulancia_9            1 
+s_10.00-10.59_ambulancia_10            1 
+s_10.00-10.59_ambulancia_11            1 
+s_10.00-10.59_ambulancia_12            1 
+s_10.00-10.59_ambulancia_13            1 
+s_10.00-10.59_ambulancia_14            1 
+s_10.00-10.59_ambulancia_15            1 
+s_10.00-10.59_ambulancia_16            1 
+s_10.00-10.59_ambulancia_17            1 
+s_10.00-10.59_ambulancia_18            1 
+s_11.00-11.59_ambulancia_1            1 
+s_11.00-11.59_ambulancia_2            1 
+s_11.00-11.59_ambulancia_3            1 
+s_11.00-11.59_ambulancia_4            1 
+s_11.00-11.59_ambulancia_5            1 
+s_11.00-11.59_ambulancia_6            1 
+s_11.00-11.59_ambulancia_7            1 
+s_11.00-11.59_ambulancia_8            1 
+s_11.00-11.59_ambulancia_9            1 
+s_11.00-11.59_ambulancia_10            1 
+s_11.00-11.59_ambulancia_11            1 
+s_11.00-11.59_ambulancia_12            1 
+s_11.00-11.59_ambulancia_13            1 
+s_11.00-11.59_ambulancia_14            1 
+s_11.00-11.59_ambulancia_15            1 
+s_11.00-11.59_ambulancia_16            1 
+s_11.00-11.59_ambulancia_17            1 
+s_11.00-11.59_ambulancia_18            1 
+s_12.00-12.59_ambulancia_1            1 
+s_12.00-12.59_ambulancia_2            1 
+s_12.00-12.59_ambulancia_3            1 
+s_12.00-12.59_ambulancia_4            1 
+s_12.00-12.59_ambulancia_5            1 
+s_12.00-12.59_ambulancia_6            1 
+s_12.00-12.59_ambulancia_7            1 
+s_12.00-12.59_ambulancia_8            1 
+s_12.00-12.59_ambulancia_9            1 
+s_12.00-12.59_ambulancia_10            1 
+s_12.00-12.59_ambulancia_11            1 
+s_12.00-12.59_ambulancia_12            1 
+s_12.00-12.59_ambulancia_13            1 
+s_12.00-12.59_ambulancia_14            1 
+s_12.00-12.59_ambulancia_15            1 
+s_12.00-12.59_ambulancia_16            1 
+s_12.00-12.59_ambulancia_17            1 
+s_12.00-12.59_ambulancia_18            1 
+s_13.00-13.59_ambulancia_1            1 
+s_13.00-13.59_ambulancia_2            1 
+s_13.00-13.59_ambulancia_3            1 
+s_13.00-13.59_ambulancia_4            1 
+s_13.00-13.59_ambulancia_5            1 
+s_13.00-13.59_ambulancia_6            1 
+s_13.00-13.59_ambulancia_7            1 
+s_13.00-13.59_ambulancia_8            1 
+s_13.00-13.59_ambulancia_9            1 
+s_13.00-13.59_ambulancia_10            1 
+s_13.00-13.59_ambulancia_11            1 
+s_13.00-13.59_ambulancia_12            1 
+s_13.00-13.59_ambulancia_13            1 
+s_13.00-13.59_ambulancia_14            1 
+s_13.00-13.59_ambulancia_15            1 
+s_13.00-13.59_ambulancia_16            1 
+s_13.00-13.59_ambulancia_17            1 
+s_13.00-13.59_ambulancia_18            1 
+s_14.00-14.59_ambulancia_1            1 
+s_14.00-14.59_ambulancia_2            1 
+s_14.00-14.59_ambulancia_3            1 
+s_14.00-14.59_ambulancia_4            1 
+s_14.00-14.59_ambulancia_5            1 
+s_14.00-14.59_ambulancia_6            1 
+s_14.00-14.59_ambulancia_7            1 
+s_14.00-14.59_ambulancia_8            1 
+s_14.00-14.59_ambulancia_9            1 
+s_14.00-14.59_ambulancia_10            1 
+s_14.00-14.59_ambulancia_11            1 
+s_14.00-14.59_ambulancia_12            1 
+s_14.00-14.59_ambulancia_13            1 
+s_14.00-14.59_ambulancia_14            1 
+s_14.00-14.59_ambulancia_15            1 
+s_14.00-14.59_ambulancia_16            1 
+s_14.00-14.59_ambulancia_17            1 
+s_14.00-14.59_ambulancia_18            1 
+s_15.00-15.59_ambulancia_1            1 
+s_15.00-15.59_ambulancia_2            1 
+s_15.00-15.59_ambulancia_3            1 
+s_15.00-15.59_ambulancia_4            1 
+s_15.00-15.59_ambulancia_5            1 
+s_15.00-15.59_ambulancia_6            1 
+s_15.00-15.59_ambulancia_7            1 
+s_15.00-15.59_ambulancia_8            1 
+s_15.00-15.59_ambulancia_9            1 
+s_15.00-15.59_ambulancia_10            1 
+s_15.00-15.59_ambulancia_11            1 
+s_15.00-15.59_ambulancia_12            1 
+s_15.00-15.59_ambulancia_13            1 
+s_15.00-15.59_ambulancia_14            1 
+s_15.00-15.59_ambulancia_15            1 
+s_15.00-15.59_ambulancia_16            1 
+s_15.00-15.59_ambulancia_17            1 
+s_15.00-15.59_ambulancia_18            1 
+s_16.00-16.59_ambulancia_1            1 
+s_16.00-16.59_ambulancia_2            1 
+s_16.00-16.59_ambulancia_3            1 
+s_16.00-16.59_ambulancia_4            1 
+s_16.00-16.59_ambulancia_5            1 
+s_16.00-16.59_ambulancia_6            1 
+s_16.00-16.59_ambulancia_7            1 
+s_16.00-16.59_ambulancia_8            1 
+s_16.00-16.59_ambulancia_9            1 
+s_16.00-16.59_ambulancia_10            1 
+s_16.00-16.59_ambulancia_11            1 
+s_16.00-16.59_ambulancia_12            1 
+s_16.00-16.59_ambulancia_13            1 
+s_16.00-16.59_ambulancia_14            1 
+s_16.00-16.59_ambulancia_15            1 
+s_16.00-16.59_ambulancia_16            1 
+s_16.00-16.59_ambulancia_17            1 
+s_16.00-16.59_ambulancia_18            1 
+s_17.00-17.59_ambulancia_1            1 
+s_17.00-17.59_ambulancia_2            1 
+s_17.00-17.59_ambulancia_3            1 
+s_17.00-17.59_ambulancia_4            1 
+s_17.00-17.59_ambulancia_5            1 
+s_17.00-17.59_ambulancia_6            1 
+s_17.00-17.59_ambulancia_7            1 
+s_17.00-17.59_ambulancia_8            1 
+s_17.00-17.59_ambulancia_9            1 
+s_17.00-17.59_ambulancia_10            1 
+s_17.00-17.59_ambulancia_11            1 
+s_17.00-17.59_ambulancia_12            1 
+s_17.00-17.59_ambulancia_13            1 
+s_17.00-17.59_ambulancia_14            1 
+s_17.00-17.59_ambulancia_15            1 
+s_17.00-17.59_ambulancia_16            1 
+s_17.00-17.59_ambulancia_17            1 
+s_17.00-17.59_ambulancia_18            1 
+s_18.00-18.59_ambulancia_1            1 
+s_18.00-18.59_ambulancia_2            1 
+s_18.00-18.59_ambulancia_3            1 
+s_18.00-18.59_ambulancia_4            1 
+s_18.00-18.59_ambulancia_5            1 
+s_18.00-18.59_ambulancia_6            1 
+s_18.00-18.59_ambulancia_7            1 
+s_18.00-18.59_ambulancia_8            1 
+s_18.00-18.59_ambulancia_9            1 
+s_18.00-18.59_ambulancia_10            1 
+s_18.00-18.59_ambulancia_11            1 
+s_18.00-18.59_ambulancia_12            1 
+s_18.00-18.59_ambulancia_13            1 
+s_18.00-18.59_ambulancia_14            1 
+s_18.00-18.59_ambulancia_15            1 
+s_18.00-18.59_ambulancia_16            1 
+s_18.00-18.59_ambulancia_17            1 
+s_18.00-18.59_ambulancia_18            1 
+s_19.00-19.59_ambulancia_1            1 
+s_19.00-19.59_ambulancia_2            1 
+s_19.00-19.59_ambulancia_3            1 
+s_19.00-19.59_ambulancia_4            1 
+s_19.00-19.59_ambulancia_5            1 
+s_19.00-19.59_ambulancia_6            1 
+s_19.00-19.59_ambulancia_7            1 
+s_19.00-19.59_ambulancia_8            1 
+s_19.00-19.59_ambulancia_9            1 
+s_19.00-19.59_ambulancia_10            1 
+s_19.00-19.59_ambulancia_11            1 
+s_19.00-19.59_ambulancia_12            1 
+s_19.00-19.59_ambulancia_13            1 
+s_19.00-19.59_ambulancia_14            1 
+s_19.00-19.59_ambulancia_15            1 
+s_19.00-19.59_ambulancia_16            1 
+s_19.00-19.59_ambulancia_17            1 
+s_19.00-19.59_ambulancia_18            1 
+s_20.00-20.59_ambulancia_1            1 
+s_20.00-20.59_ambulancia_2            1 
+s_20.00-20.59_ambulancia_3            1 
+s_20.00-20.59_ambulancia_4            1 
+s_20.00-20.59_ambulancia_5            1 
+s_20.00-20.59_ambulancia_6            1 
+s_20.00-20.59_ambulancia_7            1 
+s_20.00-20.59_ambulancia_8            1 
+s_20.00-20.59_ambulancia_9            1 
+s_20.00-20.59_ambulancia_10            1 
+s_20.00-20.59_ambulancia_11            1 
+s_20.00-20.59_ambulancia_12            1 
+s_20.00-20.59_ambulancia_13            1 
+s_20.00-20.59_ambulancia_14            1 
+s_20.00-20.59_ambulancia_15            1 
+s_20.00-20.59_ambulancia_16            1 
+s_20.00-20.59_ambulancia_17            1 
+s_20.00-20.59_ambulancia_18            1 
+s_21.00-21.59_ambulancia_1            1 
+s_21.00-21.59_ambulancia_2            1 
+s_21.00-21.59_ambulancia_3            1 
+s_21.00-21.59_ambulancia_4            1 
+s_21.00-21.59_ambulancia_5            1 
+s_21.00-21.59_ambulancia_6            1 
+s_21.00-21.59_ambulancia_7            1 
+s_21.00-21.59_ambulancia_8            1 
+s_21.00-21.59_ambulancia_9            1 
+s_21.00-21.59_ambulancia_10            1 
+s_21.00-21.59_ambulancia_11            1 
+s_21.00-21.59_ambulancia_12            1 
+s_21.00-21.59_ambulancia_13            1 
+s_21.00-21.59_ambulancia_14            1 
+s_21.00-21.59_ambulancia_15            1 
+s_21.00-21.59_ambulancia_16            1 
+s_21.00-21.59_ambulancia_17            1 
+s_21.00-21.59_ambulancia_18            1 
+s_22.00-22.59_ambulancia_1            1 
+s_22.00-22.59_ambulancia_2            1 
+s_22.00-22.59_ambulancia_3            1 
+s_22.00-22.59_ambulancia_4            1 
+s_22.00-22.59_ambulancia_5            1 
+s_22.00-22.59_ambulancia_6            1 
+s_22.00-22.59_ambulancia_7            1 
+s_22.00-22.59_ambulancia_8            1 
+s_22.00-22.59_ambulancia_9            1 
+s_22.00-22.59_ambulancia_10            1 
+s_22.00-22.59_ambulancia_11            1 
+s_22.00-22.59_ambulancia_12            1 
+s_22.00-22.59_ambulancia_13            1 
+s_22.00-22.59_ambulancia_14            1 
+s_22.00-22.59_ambulancia_15            1 
+s_22.00-22.59_ambulancia_16            1 
+s_22.00-22.59_ambulancia_17            1 
+s_22.00-22.59_ambulancia_18            1 
+s_23.00-23.59_ambulancia_1            1 
+s_23.00-23.59_ambulancia_2            1 
+s_23.00-23.59_ambulancia_3            1 
+s_23.00-23.59_ambulancia_4            1 
+s_23.00-23.59_ambulancia_5            1 
+s_23.00-23.59_ambulancia_6            1 
+s_23.00-23.59_ambulancia_7            1 
+s_23.00-23.59_ambulancia_8            1 
+s_23.00-23.59_ambulancia_9            1 
+s_23.00-23.59_ambulancia_10            1 
+s_23.00-23.59_ambulancia_11            1 
+s_23.00-23.59_ambulancia_12            1 
+s_23.00-23.59_ambulancia_13            1 
+s_23.00-23.59_ambulancia_14            1 
+s_23.00-23.59_ambulancia_15            1 
+s_23.00-23.59_ambulancia_16            1 
+s_23.00-23.59_ambulancia_17            1 
+s_23.00-23.59_ambulancia_18            1 

@@ -1,6 +1,6 @@
 # Proyecto Optimización G54
 
-from gurobipy import Model, GRB, quicksum, SolverFactory
+from gurobipy import Model, GRB, quicksum
 # Agregué el conjunto pacientes a cojuntos
 from conjuntos import (centros, periodos, prestaciones, bases,
                        ambulancias, pacientes)
@@ -13,8 +13,6 @@ from tiempo_centro_base import m_bht
 
 modelo = Model("Sistema de Atención Médica SAMU")
 
-optimizer = SolverFactory('gurobi')
-optimizer.options['threads'] = 3
 
 # Creación de variables ----------------------------------------------
 
@@ -108,26 +106,26 @@ modelo.addConstrs((l_p[paciente] <= quicksum(y[periodo, ambulancia, paciente, ce
 
 # # 7 Solo se asigna un paciente por ambulancia
 
-# modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for periodo in periodos for paciente in pacientes)
-#                    <= 1 for ambulancia in ambulancias),
-#                   name="solo_1_paciente")
+modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for periodo in periodos for paciente in pacientes)
+                   <= 1 for ambulancia in ambulancias),
+                  name="solo_1_paciente")
 
 # # 8 No pueden ser asignadas mas ambulancias de las disponibles
 
-# modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for paciente in pacientes
-#                                                              for ambulancia in ambulancias)
-#                   <= quicksum(s[periodo, ambulancia] for ambulancia in ambulancias)
-#                    for periodo in periodos),
-#                    name="limite_ambulancias")
+modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for paciente in pacientes
+                                                             for ambulancia in ambulancias)
+                  <= quicksum(s[periodo, ambulancia] for ambulancia in ambulancias)
+                   for periodo in periodos),
+                   name="limite_ambulancias")
 
 # # 9 Relacion de Variables
 
-# modelo.addConstrs((x[periodo, ambulancia, paciente] <= quicksum(y[periodo, ambulancia,
-#                   paciente, centro] for centro in centros)
-#                    for periodo in periodos
-#                    for ambulancia in ambulancias
-#                    for paciente in pacientes),
-#                    name="relacion")
+modelo.addConstrs((x[periodo, ambulancia, paciente] <= quicksum(y[periodo, ambulancia,
+                  paciente, centro] for centro in centros)
+                   for periodo in periodos
+                   for ambulancia in ambulancias
+                   for paciente in pacientes),
+                   name="relacion")
 
 # # 10 Dejar ocupadas las ambulacias cuando son asignadas
 
@@ -150,3 +148,11 @@ obj = quicksum(y[periodo, ambulancia, paciente, centro] * v_p[paciente] * r_ab[a
 modelo.setObjective(obj, GRB.MINIMIZE)
 
 modelo.optimize()
+
+modelo.printAttr("X")
+
+print("\n-------------\n")
+
+# Imprime las holguras de las restricciones (0 significa que la restricción es activa.
+# for constr in modelo.getConstrs():
+#     print(constr, constr.getAttr("slack"))
