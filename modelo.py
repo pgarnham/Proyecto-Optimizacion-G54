@@ -136,7 +136,7 @@ modelo.addConstrs((s[periodo, ambulancia] == 1 - x[periodo, ambulancia, paciente
 
 # Funcion Objetivo
 
-obj = quicksum(y[periodo, ambulancia, paciente, centro] * v_p[paciente] * r_ab[ambulancia][base] * c_pg[paciente] * (
+obj = quicksum(y[periodo, ambulancia, paciente, centro] * v_p[paciente] * r_ab[ambulancia][base] * (
                                                                         f_hgt[centro][periodo] + d_bgt[base][periodo])
                for periodo in periodos
                for ambulancia in ambulancias
@@ -144,6 +144,6 @@ obj = quicksum(y[periodo, ambulancia, paciente, centro] * v_p[paciente] * r_ab[a
                for base in bases
                for centro in centros)
 
-modelo.setObjective(obj, GRB.MAXIMIZE)
+modelo.setObjective(obj, GRB.MINIMIZE)
 
 modelo.optimize()

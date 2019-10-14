@@ -125,7 +125,7 @@ with open("conjuntos/prestaciones_2.csv", "r", encoding="utf-8") as file:
 #                     i_prestaciones[centros[index_centro - 1]] = {}
 #                 i_prestaciones[centros[index_centro - 1]][tupla[1]] = valor_i
 
-i_hf = {f"{centro}": {f"prestacion_{i}": 0 for i in range(len(prestaciones))} for centro in centros}
+i_hf = {centro: {f"prestacion_{i}": 0 for i in range(len(prestaciones) + 1)} for centro in centros}
 
 with open("conjuntos/centro_salud_prestacion.csv", "r",
           encoding="utf-8") as file:
@@ -285,11 +285,11 @@ for paciente, latlong in c_pg.items():
     inicio = calc_departure(periodo_accidente[paciente])
     loc_paciente = (latlong["lat"], latlong["long"])
     for base, loc_base in localizacion_bases.items():
-        # d_bgt[paciente][base] = duracion(loc_base, loc_paciente, inicio)
+        d_bgt[paciente][base] = duracion(loc_base, loc_paciente, inicio)
         pass
     for centro, latlong in centros.items():
         loc_centro = (latlong["lat"], latlong["long"])
-        # f_hgt[paciente][centro] = duracion(loc_paciente, loc_centro, inicio)
+        f_hgt[paciente][centro] = duracion(loc_paciente, loc_centro, inicio)
 
 # for base, loc_base in localizacion_bases.items():
 #     for centro, latlong in centros.items():
