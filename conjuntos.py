@@ -77,7 +77,7 @@ with open("conjuntos/centros_de_salud_2.csv", "r", encoding="utf-8") as file:
         if aux == 0:
             aux = 1
         else:
-            u_h2[linea[0]] = is_priv[t]
+            u_h2[linea[0]] = int(is_priv[t])
             t += 1
 
 # ---------------------------------------------------------------
@@ -154,7 +154,7 @@ with open("conjuntos/paciente_prestacion_lambda.csv", "r",
                 if prest == 0:
                     pass
                 else:
-                    lambda_pf[f"paciente_{nro}"][f"prestacion_{prest}"] = elem
+                    lambda_pf[f"paciente_{nro}"][f"prestacion_{prest}"] = int(elem)
 
 
 # Ambulancias que hay en cada Base --------------------------------
@@ -168,9 +168,9 @@ with open("conjuntos/ambulancia_base.csv", "r", encoding="utf-8") as file:
         if aux == 0:
             aux = 1
         else:
-            r_ab[f"ambulancia_{int(linea[0])}"] = {bases[i - 1]: linea[i]
+            r_ab[f"ambulancia_{int(linea[0])}"] = {bases[i - 1]: int(linea[i])
                                                    for i in range(1, 6)}
-# print(r_ab)
+print(r_ab)
 
 k_a = {}
 for ambulancia in ambulancias:
