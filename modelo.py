@@ -1,6 +1,6 @@
 # Proyecto Optimización G54
 
-from gurobipy import Model, GRB, quicksum
+from gurobipy import Model, GRB, quicksum, SolverFactory
 # Agregué el conjunto pacientes a cojuntos
 from conjuntos import (centros, periodos, prestaciones, bases,
                        ambulancias, pacientes)
@@ -12,6 +12,9 @@ from conjuntos import (k_a, i_hf, c_pg, u_h2, d_bgt, f_hgt, r_ab,
 from tiempo_centro_base import m_bht
 
 modelo = Model("Sistema de Atención Médica SAMU")
+
+optimizer = SolverFactory('gurobi')
+optimizer.options['threads'] = 3
 
 # Creación de variables ----------------------------------------------
 
@@ -91,53 +94,53 @@ modelo.addConstrs((l_p[paciente] <= quicksum(y[periodo, ambulancia, paciente, ce
                   for periodo in periodos),
                   name="clinica_privada")
 
-# 6 Atender paciente en centro que posee la prestacion
+# # 6 Atender paciente en centro que posee la prestacion
 
-print(lambda_pf)
-modelo.addConstrs((quicksum(y[periodo, ambulancia, paciente, centro] * i_hf[centro][prestacion]
-                           for ambulancia in ambulancias
-                           for centro in centros) >= lambda_pf[paciente][prestacion]
+# print(lambda_pf)
+# modelo.addConstrs((quicksum(y[periodo, ambulancia, paciente, centro] * i_hf[centro][prestacion]
+#                            for ambulancia in ambulancias
+#                            for centro in centros) >= lambda_pf[paciente][prestacion]
 
-                  for periodo in periodos
-                  for paciente in pacientes
-                  for prestacion in prestaciones),
-                  name="prestaciones")
+#                   for periodo in periodos
+#                   for paciente in pacientes
+#                   for prestacion in prestaciones),
+#                   name="prestaciones")
 
-# 7 Solo se asigna un paciente por ambulancia
+# # 7 Solo se asigna un paciente por ambulancia
 
-modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for periodo in periodos for paciente in pacientes)
-                   <= 1 for ambulancia in ambulancias),
-                  name="solo_1_paciente")
+# modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for periodo in periodos for paciente in pacientes)
+#                    <= 1 for ambulancia in ambulancias),
+#                   name="solo_1_paciente")
 
-# 8 No pueden ser asignadas mas ambulancias de las disponibles
+# # 8 No pueden ser asignadas mas ambulancias de las disponibles
 
-modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for paciente in pacientes
-                                                             for ambulancia in ambulancias)
-                  <= quicksum(s[periodo, ambulancia] for ambulancia in ambulancias)
-                   for periodo in periodos),
-                   name="limite_ambulancias")
+# modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for paciente in pacientes
+#                                                              for ambulancia in ambulancias)
+#                   <= quicksum(s[periodo, ambulancia] for ambulancia in ambulancias)
+#                    for periodo in periodos),
+#                    name="limite_ambulancias")
 
-# 9 Relacion de Variables
+# # 9 Relacion de Variables
 
-modelo.addConstrs((x[periodo, ambulancia, paciente] <= quicksum(y[periodo, ambulancia,
-                  paciente, centro] for centro in centros)
-                   for periodo in periodos
-                   for ambulancia in ambulancias
-                   for paciente in pacientes),
-                   name="relacion")
+# modelo.addConstrs((x[periodo, ambulancia, paciente] <= quicksum(y[periodo, ambulancia,
+#                   paciente, centro] for centro in centros)
+#                    for periodo in periodos
+#                    for ambulancia in ambulancias
+#                    for paciente in pacientes),
+#                    name="relacion")
 
-# 10 Dejar ocupadas las ambulacias cuando son asignadas
+# # 10 Dejar ocupadas las ambulacias cuando son asignadas
 
-modelo.addConstrs((s[periodo, ambulancia] == 1 - x[periodo, ambulancia, paciente]
-                   for periodo in periodos
-                   for ambulancia in ambulancias
-                   for paciente in pacientes),
-                  name="ocupar_ambulancia")
+# modelo.addConstrs((s[periodo, ambulancia] == 1 - x[periodo, ambulancia, paciente]
+#                    for periodo in periodos
+#                    for ambulancia in ambulancias
+#                    for paciente in pacientes),
+#                   name="ocupar_ambulancia")
 
 # Funcion Objetivo
 
 obj = quicksum(y[periodo, ambulancia, paciente, centro] * v_p[paciente] * r_ab[ambulancia][base] * (
-                                                                        f_hgt[centro][periodo] + d_bgt[base][periodo])
+                                                                        f_hgt[paciente][centro] + d_bgt[paciente][base])
                for periodo in periodos
                for ambulancia in ambulancias
                for paciente in pacientes

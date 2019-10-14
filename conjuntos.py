@@ -263,7 +263,7 @@ def duracion(origen_, destino_, tiempo):
                                   departure_time=tiempo)['rows'][0]['elements'][0]
     # print(g_out)
     if g_out == {"status": "ZERO_RESULTS"}:
-        return float("inf")
+        return 9999999999
     else:
         return int(g_out["duration_in_traffic"]["value"])
 

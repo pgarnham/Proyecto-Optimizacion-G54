@@ -78,3 +78,80 @@ Academic license - for non-commercial use only
 Gurobi 8.1.1 (win64, Python) logging started 10/14/19 18:23:03
 
 Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 18:40:22
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 18:47:36
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 18:50:54
+
+Academic license - for non-commercial use only
+Optimize a model with 36066 rows, 302832 columns and 1296432 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+13]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.09s
+
+Explored 0 nodes (0 simplex iterations) in 0.19 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 18:56:27
+
+Academic license - for non-commercial use only
+Optimize a model with 36066 rows, 302832 columns and 1296432 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.10s
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 8.1.1 (win64, Python) logging started 10/14/19 19:02:19
+
+Academic license - for non-commercial use only
+Optimize a model with 624 rows, 302832 columns and 21600 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.08 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
