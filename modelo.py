@@ -124,6 +124,22 @@ modelo.addConstrs((x[periodo, ambulancia, paciente] <= quicksum(y[periodo, ambul
 
 # 10 Dejar ocupadas las ambulacias cuando son asignadas
 
-# modelo.addConstrs((quicksum(s[periodo, ambulancia])
+modelo.addConstrs((s[periodo, ambulancia] == 1 - x[periodo, ambulancia, paciente]
+                   for periodo in periodos
+                   for ambulancia in ambulancias
+                   for paciente in pacientes),
+                  name="ocupar_ambulancia")
 
-# ),)
+# Funcion Objetivo
+
+obj = quicksum(y[periodo, ambulancia, paciente, centro] * v_p[paciente] * r_ab[ambulancia, base] * c_pg[paciente] * (
+                                                                                                        f_hgt + d_bgt)
+               for periodo in periodos
+               for ambulancia in ambulancias
+               for pacientre in pacientes
+               for base in bases
+               for centro in centros)
+
+modelo.setObjective(obj)
+
+modelo.optimize()
