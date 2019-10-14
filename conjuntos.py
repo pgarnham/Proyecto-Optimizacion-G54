@@ -143,7 +143,7 @@ print(i_hf)
 lambda_pf = {f"paciente_{i}": {} for i in range(1, 26)}
 # Después podemos hacer un set si son varias prestaciones
 
-with open("conjuntos/paciente_prestacion_lambda.csv", "r",
+with open("conjuntos/lambda.csv", "r",
           encoding="utf-8") as file:
     csv_reader = csv.reader(file, delimiter=",")
     for nro, linea in enumerate(csv_reader):
@@ -156,7 +156,7 @@ with open("conjuntos/paciente_prestacion_lambda.csv", "r",
                 else:
                     lambda_pf[f"paciente_{nro}"][f"prestacion_{prest}"] = int(elem)
 
-
+print(lambda_pf)
 # Ambulancias que hay en cada Base --------------------------------
 
 r_ab = {}
