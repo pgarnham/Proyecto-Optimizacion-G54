@@ -140,25 +140,18 @@ with open("conjuntos/paciente_prestacion_lambda.csv", "r",
 
 # Ambulancias que hay en cada Base --------------------------------
 
-ambulancias_por_base = {base: set() for base in bases}
-ambulancias_por_base["Centro Regulador"].add(ambulancias[0])
-ambulancias_por_base["SAMU Viña del Mar"].add(ambulancias[1])
-ambulancias_por_base["SAMU Viña del Mar"].add(ambulancias[2])
-ambulancias_por_base["SAMU Viña del Mar"].add(ambulancias[3])
-ambulancias_por_base["SAMU Viña del Mar"].add(ambulancias[4])
-ambulancias_por_base["SAMU Viña del Mar"].add(ambulancias[5])
-ambulancias_por_base["SAMU Quintero"].add(ambulancias[6])
-ambulancias_por_base["SAMU Quintero"].add(ambulancias[7])
-ambulancias_por_base["SAMU Quintero"].add(ambulancias[8])
-ambulancias_por_base["SAMU Quintero"].add(ambulancias[9])
-ambulancias_por_base["SAMU Quillota"].add(ambulancias[10])
-ambulancias_por_base["SAMU Quillota"].add(ambulancias[11])
-ambulancias_por_base["SAMU Quillota"].add(ambulancias[12])
-ambulancias_por_base["SAMU Quillota"].add(ambulancias[13])
-ambulancias_por_base["SAMU La Ligua"].add(ambulancias[14])
-ambulancias_por_base["SAMU La Ligua"].add(ambulancias[15])
-ambulancias_por_base["SAMU La Ligua"].add(ambulancias[16])
-ambulancias_por_base["SAMU La Ligua"].add(ambulancias[17])
+r_ab = {}
+
+with open("conjuntos/ambulancia_base.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=",")
+    aux = 0
+    for linea in csv_reader:
+        if aux == 0:
+            aux = 1
+        else:
+            r_ab[f"ambulancia_{int(linea[0])}"] = {bases[i - 1]: linea[i]
+                                                   for i in range(1, 6)}
+print(r_ab)
 
 k_a = {}
 for ambulancia in ambulancias:
@@ -276,7 +269,7 @@ for paciente, latlong in c_pg.items():
         pass
     for centro, latlong in centros.items():
         loc_centro = (latlong["lat"], latlong["long"])
-        f_hgt[paciente][centro] = duracion(loc_paciente, loc_centro, inicio)
+        # f_hgt[paciente][centro] = duracion(loc_paciente, loc_centro, inicio)
 
 
 # origen_lat = -32.81699

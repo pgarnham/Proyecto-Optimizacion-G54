@@ -48,7 +48,7 @@ for periodo in periodos:
 
 modelo.update()
 
-# Agregar restricciones, están en el orden del informe ----------------------------------------------
+# Agregar restricciones, están en el orden del informe -------------------
 
 # 1 Una ambulancia por emergencia
 
