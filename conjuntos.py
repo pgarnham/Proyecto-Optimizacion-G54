@@ -260,6 +260,7 @@ with open("conjuntos/periodo_accidente.csv", "r", encoding="utf-8") as file:
 
 d_bgt = {f"paciente_{i}": {} for i in range(1, 26)}
 f_hgt = {f"paciente_{i}": {} for i in range(1, 26)}
+# m_bht = {base: {centro: {} for centro in centros} for base in bases}
 
 for paciente, latlong in c_pg.items():
     inicio = calc_departure(periodo_accidente[paciente])
@@ -271,6 +272,13 @@ for paciente, latlong in c_pg.items():
         loc_centro = (latlong["lat"], latlong["long"])
         # f_hgt[paciente][centro] = duracion(loc_paciente, loc_centro, inicio)
 
+# for base, loc_base in localizacion_bases.items():
+#     for centro, latlong in centros.items():
+#         coord_centro = (latlong["lat"], latlong["long"])
+#         for period in periodos:
+#             inicio = calc_departure(periodo)
+#             m_bht[base][centro][period] = duracion(loc_base, coord_centro,
+#                                                    inicio)
 
 # origen_lat = -32.81699
 # origen_lon = -71.1985

@@ -7,8 +7,10 @@ from conjuntos import (centros, periodos, prestaciones, bases,
                        ambulancias_por_base, pacientes)
 
 # Al psi le puse una f
-from conjuntos import (k_a, i_hf, c_pg, u_h, d_bgt, f_hgt, m_bht, r_ab,
+from conjuntos import (k_a, i_hf, c_pg, u_h, d_bgt, f_hgt, r_ab,
                         lambda_pf, v_p, l_p)
+
+from tiempo_centro_base import m_bht
 
 modelo = Model("Sistema de Atención Médica SAMU")
 
