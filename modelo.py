@@ -144,6 +144,6 @@ obj = quicksum(y[periodo, ambulancia, paciente, centro] * v_p[paciente] * r_ab[a
                for base in bases
                for centro in centros)
 
-modelo.setObjective(obj)
+modelo.setObjective(obj, GRB.MAXIMIZE)
 
 modelo.optimize()
