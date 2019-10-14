@@ -58,6 +58,31 @@ with open("conjuntos/centros_de_salud_2.csv", "r", encoding="utf-8") as file:
 # print(centros)
 
 # ---------------------------------------------------------------
+# u_h2 reemplaza a u_h, ya esta importado a modelo.py
+u_h2 = {}
+is_priv =[]
+
+with open("conjuntos/privado_publico.csv", "r", encoding="utf-8") as file:
+    l = file.readlines()
+    for ln in l[1:]:
+        a = ln.strip().split(",")[1]
+        is_priv.append(a)
+
+
+with open("conjuntos/centros_de_salud_2.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=';')
+    aux = 0
+    t = 0
+    for linea in csv_reader:
+        if aux == 0:
+            aux = 1
+        else:
+            u_h2[linea[0]] = is_priv[t]
+            t += 1
+
+# ---------------------------------------------------------------
+
+# ---------------------------------------------------------------
 
 # Periodos de Tiempo (un día) -----------------------------------
 
@@ -70,8 +95,6 @@ with open("conjuntos/periodos.csv", "r", encoding="utf-8") as file:
         periodos[period] = (inicio, fin)
         inicio += 3600
         fin += 3600
-
-print(periodos)
 
 # ---------------------------------------------------------------
 
@@ -102,24 +125,18 @@ with open("conjuntos/prestaciones_2.csv", "r", encoding="utf-8") as file:
 #                     i_prestaciones[centros[index_centro - 1]] = {}
 #                 i_prestaciones[centros[index_centro - 1]][tupla[1]] = valor_i
 
-i_hf = {f"centro_{i}": {} for i in range(len(centros.keys()) + 1) if i != 0}
+i_hf = {f"{centro}": {f"prestacion_{i}": 0 for i in range(len(prestaciones))} for centro in centros}
 
 with open("conjuntos/centro_salud_prestacion.csv", "r",
           encoding="utf-8") as file:
-    csv_reader = csv.reader(file, delimiter=',')
-    aux = 0
-    for linea in csv_reader:
-        if aux == 0:
-            aux = 1
-        else:
-            aux_ = 0
-            for elem in linea:
-                if aux_ == 0:
-                    aux_ = 1
-                else:
-                    i_hf[f"centro_{linea[0]}"][f"prestacion_{aux_}"] = int(elem)
-                    aux_ += 1
+    lines = file.readlines()
+    inx = 1
+    for centro in centros:
+        bool_prestaciones = lines[inx].strip().split(",")
+        for i in range(len(prestaciones)):
+            i_hf[f"{centro}"][f"prestacion_{i}"] = int(bool_prestaciones[i])
 
+print(i_hf)
 
 # -----------------------------------------------------------------
 

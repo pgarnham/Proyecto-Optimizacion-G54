@@ -6,7 +6,7 @@ from conjuntos import (centros, periodos, prestaciones, bases,
                        ambulancias, pacientes)
 
 # Al psi le puse una f
-from conjuntos import (k_a, i_hf, c_pg, u_h, d_bgt, f_hgt, r_ab,
+from conjuntos import (k_a, i_hf, c_pg, u_h2, d_bgt, f_hgt, r_ab,
                         lambda_pf, v_p, l_p)
 
 from tiempo_centro_base import m_bht
@@ -77,28 +77,28 @@ modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for ambulancia in a
 
 # 4 No asignar mas ambulancias de las que existen
 
-modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] <= len(ambulancias)
-                            for ambulancia in ambulancias
-                            for paciente in pacientes)
-                   for periodo in list(periodos.keys())),
+modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente] for ambulancia in ambulancias
+                                                             for paciente in pacientes) <= len(ambulancias)
+                   for periodo in periodos),
                    name="max_ambulancias")
 
 # 5 Atender a un paciente en clinica privada, si así lo desea...
 
-modelo.addConstrs((l_p[paciente] <= quicksum(y[periodo, ambulancia, paciente, centro] * u_h[centro]
+modelo.addConstrs((l_p[paciente] <= quicksum(y[periodo, ambulancia, paciente, centro] * u_h2[centro]
                                             for ambulancia in ambulancias
                                             for centro in centros)
                   for paciente in pacientes
-                  for periodo in list(periodos.keys())),
+                  for periodo in periodos),
                   name="clinica_privada")
 
 # 6 Atender paciente en centro que posee la prestacion
 
+print(i_hf)
 modelo.addConstrs((quicksum(y[periodo, ambulancia, paciente, centro] * i_hf[centro, prestacion]
                             for ambulancia in ambulancias
                             for centro in centros) >= lambda_pf[paciente, prestacion]
 
-                   for periodo in list(periodos.keys())
+                   for periodo in periodos
                    for paciente in pacientes
                    for prestacion in prestaciones),
                    name="prestaciones")
