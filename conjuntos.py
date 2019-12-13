@@ -136,7 +136,6 @@ with open("conjuntos/centro_salud_prestacion.csv", "r",
         for i in range(len(prestaciones)):
             i_hf[f"{centro}"][f"prestacion_{i}"] = int(bool_prestaciones[i])
 
-print(i_hf)
 
 # -----------------------------------------------------------------
 
@@ -156,7 +155,6 @@ with open("conjuntos/lambda.csv", "r",
                 else:
                     lambda_pf[f"paciente_{nro}"][f"prestacion_{prest}"] = int(elem)
 
-print(lambda_pf)
 # Ambulancias que hay en cada Base --------------------------------
 
 r_ab = {}
@@ -170,7 +168,6 @@ with open("conjuntos/ambulancia_base.csv", "r", encoding="utf-8") as file:
         else:
             r_ab[f"ambulancia_{int(linea[0])}"] = {bases[i - 1]: int(linea[i])
                                                    for i in range(1, 6)}
-print(r_ab)
 
 k_a = {}
 for ambulancia in ambulancias:
