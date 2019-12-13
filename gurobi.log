@@ -1948,3 +1948,222 @@ Solution count 0
 
 Model is infeasible
 Best objective -, best bound -, gap -
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 13:46:28 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1250 rows, 292032 columns and 929232 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 504 rows and 291806 columns
+Presolve time: 0.50s
+
+Explored 0 nodes (0 simplex iterations) in 0.88 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 13:50:24 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1250 rows, 292032 columns and 929232 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 504 rows and 291806 columns
+Presolve time: 0.58s
+
+Explored 0 nodes (0 simplex iterations) in 0.93 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 13:58:34 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 600 rows, 292032 columns and 291600 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.09 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 14:02:34 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 601 rows, 292032 columns and 583200 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 358415.00000
+Presolve removed 600 rows and 292007 columns
+Presolve time: 0.37s
+Presolved: 1 rows, 25 columns, 25 nonzeros
+Found heuristic solution: objective 25809.000000
+Variable types: 0 continuous, 25 integer (0 binary)
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 0 nodes (0 simplex iterations) in 0.49 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 25809 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.580900000000e+04, best bound 2.580900000000e+04, gap 0.0000%
+
+    Variable            X 
+-------------------------
+x_00.00-00.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_01.00-01.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_02.00-02.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_03.00-03.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_04.00-04.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_05.00-05.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_06.00-06.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_07.00-07.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_08.00-08.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_09.00-09.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_09.00-09.59_ambulancia_2_paciente_25_SAPU Pompeya            1 
+x_10.00-10.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_11.00-11.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_12.00-12.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_13.00-13.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_14.00-14.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_15.00-15.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_16.00-16.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_17.00-17.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_18.00-18.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_19.00-19.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_20.00-20.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_21.00-21.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_22.00-22.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_23.00-23.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 14:07:36 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 626 rows, 292032 columns and 7873200 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 292031 columns
+Presolve time: 3.93s
+
+Explored 0 nodes (0 simplex iterations) in 7.43 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 14:11:21 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 626 rows, 292032 columns and 874800 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 347753.00000
+Presolve removed 626 rows and 292032 columns
+Presolve time: 0.39s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.49 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 160062 347753 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.600620000000e+05, best bound 1.600620000000e+05, gap 0.0000%
+
+    Variable            X 
+-------------------------
+x_00.00-00.59_ambulancia_2_paciente_25_SAPU Pompeya            1 
+x_03.00-03.59_ambulancia_9_paciente_14_SAPU Ventanas            1 
+x_06.00-06.59_ambulancia_3_paciente_20_HOSPITAL Juana Ross de Edwards de Peñablanca            1 
+x_07.00-07.59_ambulancia_6_paciente_24_SAPU Pompeya            1 
+x_08.00-08.59_ambulancia_2_paciente_8_SAPU Concón             1 
+x_08.00-08.59_ambulancia_7_paciente_12_SAPU Artificio            1 
+x_08.00-08.59_ambulancia_13_paciente_17_HOSPITAL Santo Tomás de Limache            1 
+x_09.00-09.59_ambulancia_14_paciente_3_HOSPITAL Geriátrico Paz de La Tarde            1 
+x_09.00-09.59_ambulancia_14_paciente_15_HOSPITAL Mario Sánchez de La Calera            1 
+x_10.00-10.59_ambulancia_6_paciente_18_SAPU El Belloto            1 
+x_12.00-12.59_ambulancia_4_paciente_19_SAPU El Belloto            1 
+x_15.00-15.59_ambulancia_2_paciente_9_SAPU Concón             1 
+x_15.00-15.59_ambulancia_4_paciente_2_SAPU Kaplan            1 
+x_15.00-15.59_ambulancia_8_paciente_1_SAPU Concón             1 
+x_16.00-16.59_ambulancia_5_paciente_7_SAPU Kaplan            1 
+x_16.00-16.59_ambulancia_13_paciente_16_HOSPITAL Mario Sánchez de La Calera            1 
+x_17.00-17.59_ambulancia_5_paciente_6_SAPU Kaplan            1 
+x_17.00-17.59_ambulancia_5_paciente_23_SAPU Pompeya            1 
+x_18.00-18.59_ambulancia_2_paciente_22_HOSPITAL de Quilpué            1 
+x_18.00-18.59_ambulancia_14_paciente_4_HOSPITAL San Martín de Quillota            1 
+x_19.00-19.59_ambulancia_11_paciente_5_HOSPITAL Geriátrico Paz de La Tarde            1 
+x_20.00-20.59_ambulancia_1_paciente_11_CLINICA Ciudad del Mar            1 
+x_20.00-20.59_ambulancia_10_paciente_13_SAPU Ventanas            1 
+x_22.00-22.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_23.00-23.59_ambulancia_3_paciente_21_HOSPITAL Juana Ross de Edwards de Peñablanca            1 
