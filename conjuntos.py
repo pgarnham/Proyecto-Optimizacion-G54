@@ -243,7 +243,7 @@ pacientes = {f"paciente_{i}": i for i in range(1, 26)}
 
 # ------------------ Tiempos de Traslado ----------------------------
 
-dia_base = datetime(2019, 11, 13, 0, 0)  # Día en el que empezamos.
+dia_base = datetime(2020, 1, 13, 0, 0)  # Día en el que empezamos.
 tiempo_base = int(time.mktime(dia_base.timetuple()))
 
 
