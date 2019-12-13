@@ -1873,3 +1873,78 @@ Best objective -, best bound -, gap -
 
     Variable            X 
 -------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 13:20:24 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1250 rows, 302832 columns and 929232 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 504 rows and 302606 columns
+Presolve time: 0.44s
+
+Explored 0 nodes (0 simplex iterations) in 0.71 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 13:25:25 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1250 rows, 302832 columns and 929232 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 504 rows and 302606 columns
+Presolve time: 0.41s
+
+Explored 0 nodes (0 simplex iterations) in 0.69 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 13:31:00 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1250 rows, 302832 columns and 929232 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 504 rows and 302606 columns
+Presolve time: 0.40s
+
+Explored 0 nodes (0 simplex iterations) in 0.67 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
