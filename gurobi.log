@@ -1444,3 +1444,432 @@ s_23.00-23.59_ambulancia_15            1
 s_23.00-23.59_ambulancia_16            1 
 s_23.00-23.59_ambulancia_17            1 
 s_23.00-23.59_ambulancia_18            1 
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:13:08 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 12474 rows, 302832 columns and 389232 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 12264 rows and 300672 columns
+Presolve time: 0.40s
+Presolved: 210 rows, 2160 columns, 4320 nonzeros
+Variable types: 0 continuous, 2160 integer (2160 binary)
+
+Root relaxation: infeasible, 468 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (468 simplex iterations) in 0.50 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:18:58 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 600 rows, 302832 columns and 10800 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.07 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:21:31 2019
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:26:25 2019
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:29:09 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 624 rows, 302832 columns and 11232 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.07 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:35:48 2019
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:38:27 2019
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:41:58 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 625 rows, 302832 columns and 22032 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.06 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+    Variable            X 
+-------------------------
+x_00.00-00.59_ambulancia_11_paciente_8            1 
+x_10.00-10.59_ambulancia_17_paciente_24            1 
+x_14.00-14.59_ambulancia_5_paciente_24            1 
+x_18.00-18.59_ambulancia_17_paciente_3            1 
+x_22.00-22.59_ambulancia_6_paciente_25            1 
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:45:21 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1075 rows, 302832 columns and 32832 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.07 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+    Variable            X 
+-------------------------
+x_00.00-00.59_ambulancia_11_paciente_8            1 
+x_02.00-02.59_ambulancia_18_paciente_7            1 
+x_04.00-04.59_ambulancia_2_paciente_1            1 
+x_04.00-04.59_ambulancia_9_paciente_5            1 
+x_05.00-05.59_ambulancia_8_paciente_20            1 
+x_07.00-07.59_ambulancia_1_paciente_10            1 
+x_07.00-07.59_ambulancia_4_paciente_2            1 
+x_07.00-07.59_ambulancia_8_paciente_7            1 
+x_10.00-10.59_ambulancia_17_paciente_24            1 
+x_11.00-11.59_ambulancia_14_paciente_4            1 
+x_12.00-12.59_ambulancia_4_paciente_20            1 
+x_12.00-12.59_ambulancia_8_paciente_2            1 
+x_14.00-14.59_ambulancia_5_paciente_24            1 
+x_15.00-15.59_ambulancia_12_paciente_6            1 
+x_16.00-16.59_ambulancia_8_paciente_12            1 
+x_17.00-17.59_ambulancia_10_paciente_9            1 
+x_17.00-17.59_ambulancia_10_paciente_25            1 
+x_18.00-18.59_ambulancia_1_paciente_21            1 
+x_18.00-18.59_ambulancia_17_paciente_3            1 
+x_20.00-20.59_ambulancia_12_paciente_21            1 
+x_21.00-21.59_ambulancia_10_paciente_5            1 
+x_21.00-21.59_ambulancia_14_paciente_6            1 
+x_22.00-22.59_ambulancia_4_paciente_17            1 
+x_22.00-22.59_ambulancia_6_paciente_25            1 
+x_23.00-23.59_ambulancia_6_paciente_15            1 
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:48:55 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 650 rows, 302832 columns and 32832 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.06 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+    Variable            X 
+-------------------------
+x_00.00-00.59_ambulancia_11_paciente_8            1 
+x_01.00-01.59_ambulancia_16_paciente_23            1 
+x_03.00-03.59_ambulancia_5_paciente_22            1 
+x_03.00-03.59_ambulancia_10_paciente_18            1 
+x_04.00-04.59_ambulancia_2_paciente_1            1 
+x_04.00-04.59_ambulancia_9_paciente_5            1 
+x_06.00-06.59_ambulancia_12_paciente_16            1 
+x_07.00-07.59_ambulancia_1_paciente_10            1 
+x_07.00-07.59_ambulancia_8_paciente_7            1 
+x_08.00-08.59_ambulancia_8_paciente_14            1 
+x_10.00-10.59_ambulancia_17_paciente_24            1 
+x_11.00-11.59_ambulancia_6_paciente_13            1 
+x_11.00-11.59_ambulancia_14_paciente_4            1 
+x_12.00-12.59_ambulancia_4_paciente_20            1 
+x_12.00-12.59_ambulancia_8_paciente_2            1 
+x_15.00-15.59_ambulancia_12_paciente_6            1 
+x_16.00-16.59_ambulancia_8_paciente_12            1 
+x_17.00-17.59_ambulancia_10_paciente_9            1 
+x_17.00-17.59_ambulancia_14_paciente_11            1 
+x_18.00-18.59_ambulancia_1_paciente_21            1 
+x_18.00-18.59_ambulancia_17_paciente_3            1 
+x_18.00-18.59_ambulancia_18_paciente_19            1 
+x_22.00-22.59_ambulancia_4_paciente_17            1 
+x_22.00-22.59_ambulancia_6_paciente_25            1 
+x_23.00-23.59_ambulancia_6_paciente_15            1 
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:52:22 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1250 rows, 302832 columns and 86832 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 2144784.0000
+Presolve removed 1250 rows and 302832 columns
+Presolve time: 0.16s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.23 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 681024 2.14478e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.810240000000e+05, best bound 6.810240000000e+05, gap 0.0000%
+
+    Variable            X 
+-------------------------
+x_00.00-00.59_ambulancia_9_paciente_25            1 
+x_03.00-03.59_ambulancia_6_paciente_22            1 
+x_03.00-03.59_ambulancia_13_paciente_8            1 
+x_05.00-05.59_ambulancia_4_paciente_4            1 
+x_05.00-05.59_ambulancia_10_paciente_6            1 
+x_05.00-05.59_ambulancia_17_paciente_5            1 
+x_06.00-06.59_ambulancia_18_paciente_1            1 
+x_06.00-06.59_ambulancia_18_paciente_18            1 
+x_07.00-07.59_ambulancia_4_paciente_17            1 
+x_07.00-07.59_ambulancia_18_paciente_13            1 
+x_08.00-08.59_ambulancia_8_paciente_9            1 
+x_10.00-10.59_ambulancia_6_paciente_7            1 
+x_10.00-10.59_ambulancia_15_paciente_11            1 
+x_12.00-12.59_ambulancia_11_paciente_19            1 
+x_15.00-15.59_ambulancia_2_paciente_24            1 
+x_16.00-16.59_ambulancia_11_paciente_2            1 
+x_16.00-16.59_ambulancia_11_paciente_15            1 
+x_17.00-17.59_ambulancia_18_paciente_16            1 
+x_18.00-18.59_ambulancia_14_paciente_10            1 
+x_21.00-21.59_ambulancia_1_paciente_3            1 
+x_22.00-22.59_ambulancia_11_paciente_21            1 
+x_23.00-23.59_ambulancia_3_paciente_23            1 
+x_23.00-23.59_ambulancia_4_paciente_20            1 
+x_23.00-23.59_ambulancia_7_paciente_12            1 
+x_23.00-23.59_ambulancia_11_paciente_14            1 
+y_00.00-00.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_00.00-00.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_00.00-00.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_00.00-00.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_00.00-00.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_01.00-01.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_01.00-01.59_ambulancia_3_paciente_19_CLINICA Los Carrera            1 
+y_01.00-01.59_ambulancia_5_paciente_20_CLINICA Los Carrera            1 
+y_01.00-01.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_01.00-01.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_02.00-02.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_02.00-02.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_02.00-02.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_02.00-02.59_ambulancia_5_paciente_20_CLINICA Los Carrera            1 
+y_02.00-02.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_03.00-03.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_03.00-03.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_03.00-03.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_03.00-03.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_03.00-03.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_04.00-04.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_04.00-04.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_04.00-04.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_04.00-04.59_ambulancia_6_paciente_20_CLINICA Los Carrera            1 
+y_04.00-04.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_05.00-05.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_05.00-05.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_05.00-05.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_05.00-05.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_05.00-05.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_06.00-06.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_06.00-06.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_06.00-06.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_06.00-06.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_06.00-06.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_07.00-07.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_07.00-07.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_07.00-07.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_07.00-07.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_07.00-07.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_08.00-08.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_08.00-08.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_08.00-08.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_08.00-08.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_08.00-08.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_09.00-09.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_09.00-09.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_09.00-09.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_09.00-09.59_ambulancia_6_paciente_20_CLINICA Los Carrera            1 
+y_09.00-09.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_10.00-10.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_10.00-10.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_10.00-10.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_10.00-10.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_10.00-10.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_11.00-11.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_11.00-11.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_11.00-11.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_11.00-11.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_11.00-11.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_12.00-12.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_12.00-12.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_12.00-12.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+y_12.00-12.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_12.00-12.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_13.00-13.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_13.00-13.59_ambulancia_2_paciente_20_CLINICA Los Carrera            1 
+y_13.00-13.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_13.00-13.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_13.00-13.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_14.00-14.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_14.00-14.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_14.00-14.59_ambulancia_5_paciente_20_CLINICA Los Carrera            1 
+y_14.00-14.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+y_14.00-14.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_15.00-15.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_15.00-15.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_15.00-15.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_15.00-15.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_15.00-15.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_16.00-16.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_16.00-16.59_ambulancia_3_paciente_19_CLINICA Los Carrera            1 
+y_16.00-16.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_16.00-16.59_ambulancia_5_paciente_20_CLINICA Los Carrera            1 
+y_16.00-16.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+y_17.00-17.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_17.00-17.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+y_17.00-17.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_17.00-17.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_17.00-17.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_18.00-18.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_18.00-18.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+y_18.00-18.59_ambulancia_6_paciente_19_CLINICA Los Carrera            1 
+y_18.00-18.59_ambulancia_6_paciente_20_CLINICA Los Carrera            1 
+y_18.00-18.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_19.00-19.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_19.00-19.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_19.00-19.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_19.00-19.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_19.00-19.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+y_20.00-20.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_20.00-20.59_ambulancia_4_paciente_18_CLINICA Los Carrera            1 
+y_20.00-20.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_20.00-20.59_ambulancia_5_paciente_20_CLINICA Los Carrera            1 
+y_20.00-20.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_21.00-21.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_21.00-21.59_ambulancia_2_paciente_18_CLINICA Los Carrera            1 
+y_21.00-21.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_21.00-21.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+y_21.00-21.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+y_22.00-22.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_22.00-22.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_22.00-22.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+y_22.00-22.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_22.00-22.59_ambulancia_12_paciente_15_CLINICA Los Leones            1 
+y_23.00-23.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+y_23.00-23.59_ambulancia_4_paciente_19_CLINICA Los Carrera            1 
+y_23.00-23.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+y_23.00-23.59_ambulancia_6_paciente_20_CLINICA Los Carrera            1 
+y_23.00-23.59_ambulancia_13_paciente_15_CLINICA Los Leones            1 
+
+Gurobi 8.0.1 (mac64, Python) logging started Thu Dec 12 22:55:22 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 12050 rows, 302832 columns and 389232 nonzeros
+Variable types: 0 continuous, 302832 integer (302832 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 9720 rows and 298926 columns
+Presolve time: 0.27s
+
+Explored 0 nodes (0 simplex iterations) in 0.42 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
