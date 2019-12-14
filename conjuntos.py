@@ -314,6 +314,27 @@ for paciente, latlong in c_pg.items():
 # print(my_dist["duration"]["value"])
 # print([calc_departure(per) for per in periodos])
 # print(ambulancia_avanzada)
+# print(lambda_pf)
+
+lambda_p = {f"paciente_{i}": {} for i in range(1, 26)}
+
+with open("conjuntos/lambda_reducido.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=",")
+    aux = 0
+    for paciente in csv_reader:
+        if aux == 0:
+            aux = 1
+        else:
+            lambda_p[f"paciente_{int(paciente[0])}"] = int(paciente[1])
 
 
-print(l_p)
+i_h = {centro: {} for centro in centros}
+
+with open("conjuntos/centro_salud_reducido.csv", "r", encoding="utf-8") as file:
+    csv_reader = csv.reader(file, delimiter=",")
+    aux = 0
+    for centro in csv_reader:
+        if aux == 0:
+            aux = 1
+        else:
+          i_h[centro[0]] = int(centro[1])

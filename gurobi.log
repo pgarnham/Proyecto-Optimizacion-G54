@@ -2275,3 +2275,1259 @@ x_23.00-23.59_ambulancia_3_paciente_25_SAPU Pompeya            1
 x_23.00-23.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
 x_23.00-23.59_ambulancia_14_paciente_3_HOSPITAL Geriátrico Paz de La Tarde            1 
 x_23.00-23.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 16:56:45 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 675 rows, 292032 columns and 929232 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 301060.00000
+Presolve removed 675 rows and 292032 columns
+Presolve time: 0.51s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.61 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 164590 301060 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.645900000000e+05, best bound 1.645900000000e+05, gap 0.0000%
+
+    Variable            X 
+-------------------------
+x_02.00-02.59_ambulancia_1_paciente_11_CLINICA Ciudad del Mar            1 
+x_02.00-02.59_ambulancia_2_paciente_2_SAPU Kaplan            1 
+x_02.00-02.59_ambulancia_6_paciente_22_HOSPITAL de Quilpué            1 
+x_04.00-04.59_ambulancia_4_paciente_9_SAPU Concón             1 
+x_05.00-05.59_ambulancia_11_paciente_16_HOSPITAL Mario Sánchez de La Calera            1 
+x_08.00-08.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+x_08.00-08.59_ambulancia_13_paciente_3_HOSPITAL Geriátrico Paz de La Tarde            1 
+x_08.00-08.59_ambulancia_13_paciente_5_HOSPITAL Geriátrico Paz de La Tarde            1 
+x_10.00-10.59_ambulancia_6_paciente_6_SAPU Kaplan            1 
+x_12.00-12.59_ambulancia_10_paciente_12_SAPU Artificio            1 
+x_13.00-13.59_ambulancia_5_paciente_25_SAPU Pompeya            1 
+x_15.00-15.59_ambulancia_2_paciente_8_SAPU Concón             1 
+x_17.00-17.59_ambulancia_5_paciente_19_CLINICA Los Carrera            1 
+x_17.00-17.59_ambulancia_11_paciente_4_HOSPITAL San Martín de Quillota            1 
+x_18.00-18.59_ambulancia_4_paciente_24_SAPU Pompeya            1 
+x_18.00-18.59_ambulancia_5_paciente_18_CLINICA Los Carrera            1 
+x_18.00-18.59_ambulancia_7_paciente_13_SAPU Ventanas            1 
+x_18.00-18.59_ambulancia_10_paciente_1_SAPU Concón             1 
+x_19.00-19.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_19.00-19.59_ambulancia_7_paciente_14_SAPU Ventanas            1 
+x_20.00-20.59_ambulancia_4_paciente_21_HOSPITAL Juana Ross de Edwards de Peñablanca            1 
+x_20.00-20.59_ambulancia_6_paciente_7_SAPU Kaplan            1 
+x_21.00-21.59_ambulancia_12_paciente_17_HOSPITAL Santo Tomás de Limache            1 
+x_23.00-23.59_ambulancia_3_paciente_23_SAPU Pompeya            1 
+x_23.00-23.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 17:00:32 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 699 rows, 292032 columns and 1221264 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 4.000032e+10
+Presolve removed 649 rows and 291432 columns
+Presolve time: 0.76s
+Presolved: 50 rows, 600 columns, 1680 nonzeros
+Found heuristic solution: objective 165512.00000
+Variable types: 0 continuous, 600 integer (600 binary)
+
+Root relaxation: cutoff, 96 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      165512.000 165512.000  0.00%     -    1s
+
+Explored 0 nodes (96 simplex iterations) in 1.22 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 165512 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.655120000000e+05, best bound 1.655120000000e+05, gap 0.0000%
+
+    Variable            X 
+-------------------------
+x_00.00-00.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_00.00-00.59_ambulancia_3_paciente_18_CLINICA Los Carrera            1 
+x_00.00-00.59_ambulancia_3_paciente_19_CLINICA Los Carrera            1 
+x_00.00-00.59_ambulancia_4_paciente_20_CLINICA Los Carrera            1 
+x_00.00-00.59_ambulancia_6_paciente_23_SAPU Pompeya            1 
+x_00.00-00.59_ambulancia_11_paciente_5_HOSPITAL Geriátrico Paz de La Tarde            1 
+x_00.00-00.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+x_02.00-02.59_ambulancia_3_paciente_2_SAPU Kaplan            1 
+x_03.00-03.59_ambulancia_2_paciente_6_SAPU Kaplan            1 
+x_11.00-11.59_ambulancia_5_paciente_7_SAPU Kaplan            1 
+x_11.00-11.59_ambulancia_5_paciente_8_SAPU Concón             1 
+x_11.00-11.59_ambulancia_13_paciente_12_SAPU Artificio            1 
+x_14.00-14.59_ambulancia_1_paciente_11_CLINICA Ciudad del Mar            1 
+x_15.00-15.59_ambulancia_6_paciente_24_SAPU Pompeya            1 
+x_16.00-16.59_ambulancia_6_paciente_9_SAPU Concón             1 
+x_17.00-17.59_ambulancia_4_paciente_25_SAPU Pompeya            1 
+x_17.00-17.59_ambulancia_13_paciente_4_HOSPITAL San Martín de Quillota            1 
+x_18.00-18.59_ambulancia_8_paciente_14_SAPU Ventanas            1 
+x_19.00-19.59_ambulancia_11_paciente_16_HOSPITAL Mario Sánchez de La Calera            1 
+x_20.00-20.59_ambulancia_9_paciente_1_SAPU Concón             1 
+x_21.00-21.59_ambulancia_2_paciente_21_HOSPITAL Juana Ross de Edwards de Peñablanca            1 
+x_21.00-21.59_ambulancia_7_paciente_13_SAPU Ventanas            1 
+x_22.00-22.59_ambulancia_3_paciente_22_HOSPITAL de Quilpué            1 
+x_22.00-22.59_ambulancia_11_paciente_17_HOSPITAL Santo Tomás de Limache            1 
+x_22.00-22.59_ambulancia_12_paciente_3_HOSPITAL Geriátrico Paz de La Tarde            1 
+s_00.00-00.59_ambulancia_1            1 
+s_00.00-00.59_ambulancia_2            1 
+s_00.00-00.59_ambulancia_3            1 
+s_00.00-00.59_ambulancia_4            1 
+s_00.00-00.59_ambulancia_5            1 
+s_00.00-00.59_ambulancia_6            1 
+s_00.00-00.59_ambulancia_7            1 
+s_00.00-00.59_ambulancia_8            1 
+s_00.00-00.59_ambulancia_9            1 
+s_00.00-00.59_ambulancia_10            1 
+s_00.00-00.59_ambulancia_11            1 
+s_00.00-00.59_ambulancia_12            1 
+s_00.00-00.59_ambulancia_13            1 
+s_00.00-00.59_ambulancia_14            1 
+s_00.00-00.59_ambulancia_15            1 
+s_00.00-00.59_ambulancia_16            1 
+s_00.00-00.59_ambulancia_17            1 
+s_00.00-00.59_ambulancia_18            1 
+s_01.00-01.59_ambulancia_1            1 
+s_01.00-01.59_ambulancia_2            1 
+s_01.00-01.59_ambulancia_3            1 
+s_01.00-01.59_ambulancia_4            1 
+s_01.00-01.59_ambulancia_5            1 
+s_01.00-01.59_ambulancia_6            1 
+s_01.00-01.59_ambulancia_7            1 
+s_01.00-01.59_ambulancia_8            1 
+s_01.00-01.59_ambulancia_9            1 
+s_01.00-01.59_ambulancia_10            1 
+s_01.00-01.59_ambulancia_11            1 
+s_01.00-01.59_ambulancia_12            1 
+s_01.00-01.59_ambulancia_13            1 
+s_01.00-01.59_ambulancia_14            1 
+s_01.00-01.59_ambulancia_15            1 
+s_01.00-01.59_ambulancia_16            1 
+s_01.00-01.59_ambulancia_17            1 
+s_01.00-01.59_ambulancia_18            1 
+s_02.00-02.59_ambulancia_1            1 
+s_02.00-02.59_ambulancia_2            1 
+s_02.00-02.59_ambulancia_3            1 
+s_02.00-02.59_ambulancia_4            1 
+s_02.00-02.59_ambulancia_5            1 
+s_02.00-02.59_ambulancia_6            1 
+s_02.00-02.59_ambulancia_7            1 
+s_02.00-02.59_ambulancia_8            1 
+s_02.00-02.59_ambulancia_9            1 
+s_02.00-02.59_ambulancia_10            1 
+s_02.00-02.59_ambulancia_11            1 
+s_02.00-02.59_ambulancia_12            1 
+s_02.00-02.59_ambulancia_13            1 
+s_02.00-02.59_ambulancia_14            1 
+s_02.00-02.59_ambulancia_15            1 
+s_02.00-02.59_ambulancia_16            1 
+s_02.00-02.59_ambulancia_17            1 
+s_02.00-02.59_ambulancia_18            1 
+s_03.00-03.59_ambulancia_1            1 
+s_03.00-03.59_ambulancia_2            1 
+s_03.00-03.59_ambulancia_3            1 
+s_03.00-03.59_ambulancia_4            1 
+s_03.00-03.59_ambulancia_5            1 
+s_03.00-03.59_ambulancia_6            1 
+s_03.00-03.59_ambulancia_7            1 
+s_03.00-03.59_ambulancia_8            1 
+s_03.00-03.59_ambulancia_9            1 
+s_03.00-03.59_ambulancia_10            1 
+s_03.00-03.59_ambulancia_11            1 
+s_03.00-03.59_ambulancia_12            1 
+s_03.00-03.59_ambulancia_13            1 
+s_03.00-03.59_ambulancia_14            1 
+s_03.00-03.59_ambulancia_15            1 
+s_03.00-03.59_ambulancia_16            1 
+s_03.00-03.59_ambulancia_17            1 
+s_03.00-03.59_ambulancia_18            1 
+s_04.00-04.59_ambulancia_1            1 
+s_04.00-04.59_ambulancia_2            1 
+s_04.00-04.59_ambulancia_3            1 
+s_04.00-04.59_ambulancia_4            1 
+s_04.00-04.59_ambulancia_5            1 
+s_04.00-04.59_ambulancia_6            1 
+s_04.00-04.59_ambulancia_7            1 
+s_04.00-04.59_ambulancia_8            1 
+s_04.00-04.59_ambulancia_9            1 
+s_04.00-04.59_ambulancia_10            1 
+s_04.00-04.59_ambulancia_11            1 
+s_04.00-04.59_ambulancia_12            1 
+s_04.00-04.59_ambulancia_13            1 
+s_04.00-04.59_ambulancia_14            1 
+s_04.00-04.59_ambulancia_15            1 
+s_04.00-04.59_ambulancia_16            1 
+s_04.00-04.59_ambulancia_17            1 
+s_04.00-04.59_ambulancia_18            1 
+s_05.00-05.59_ambulancia_1            1 
+s_05.00-05.59_ambulancia_2            1 
+s_05.00-05.59_ambulancia_3            1 
+s_05.00-05.59_ambulancia_4            1 
+s_05.00-05.59_ambulancia_5            1 
+s_05.00-05.59_ambulancia_6            1 
+s_05.00-05.59_ambulancia_7            1 
+s_05.00-05.59_ambulancia_8            1 
+s_05.00-05.59_ambulancia_9            1 
+s_05.00-05.59_ambulancia_10            1 
+s_05.00-05.59_ambulancia_11            1 
+s_05.00-05.59_ambulancia_12            1 
+s_05.00-05.59_ambulancia_13            1 
+s_05.00-05.59_ambulancia_14            1 
+s_05.00-05.59_ambulancia_15            1 
+s_05.00-05.59_ambulancia_16            1 
+s_05.00-05.59_ambulancia_17            1 
+s_05.00-05.59_ambulancia_18            1 
+s_06.00-06.59_ambulancia_1            1 
+s_06.00-06.59_ambulancia_2            1 
+s_06.00-06.59_ambulancia_3            1 
+s_06.00-06.59_ambulancia_4            1 
+s_06.00-06.59_ambulancia_5            1 
+s_06.00-06.59_ambulancia_6            1 
+s_06.00-06.59_ambulancia_7            1 
+s_06.00-06.59_ambulancia_8            1 
+s_06.00-06.59_ambulancia_9            1 
+s_06.00-06.59_ambulancia_10            1 
+s_06.00-06.59_ambulancia_11            1 
+s_06.00-06.59_ambulancia_12            1 
+s_06.00-06.59_ambulancia_13            1 
+s_06.00-06.59_ambulancia_14            1 
+s_06.00-06.59_ambulancia_15            1 
+s_06.00-06.59_ambulancia_16            1 
+s_06.00-06.59_ambulancia_17            1 
+s_06.00-06.59_ambulancia_18            1 
+s_07.00-07.59_ambulancia_1            1 
+s_07.00-07.59_ambulancia_2            1 
+s_07.00-07.59_ambulancia_3            1 
+s_07.00-07.59_ambulancia_4            1 
+s_07.00-07.59_ambulancia_5            1 
+s_07.00-07.59_ambulancia_6            1 
+s_07.00-07.59_ambulancia_7            1 
+s_07.00-07.59_ambulancia_8            1 
+s_07.00-07.59_ambulancia_9            1 
+s_07.00-07.59_ambulancia_10            1 
+s_07.00-07.59_ambulancia_11            1 
+s_07.00-07.59_ambulancia_12            1 
+s_07.00-07.59_ambulancia_13            1 
+s_07.00-07.59_ambulancia_14            1 
+s_07.00-07.59_ambulancia_15            1 
+s_07.00-07.59_ambulancia_16            1 
+s_07.00-07.59_ambulancia_17            1 
+s_07.00-07.59_ambulancia_18            1 
+s_08.00-08.59_ambulancia_1            1 
+s_08.00-08.59_ambulancia_2            1 
+s_08.00-08.59_ambulancia_3            1 
+s_08.00-08.59_ambulancia_4            1 
+s_08.00-08.59_ambulancia_5            1 
+s_08.00-08.59_ambulancia_6            1 
+s_08.00-08.59_ambulancia_7            1 
+s_08.00-08.59_ambulancia_8            1 
+s_08.00-08.59_ambulancia_9            1 
+s_08.00-08.59_ambulancia_10            1 
+s_08.00-08.59_ambulancia_11            1 
+s_08.00-08.59_ambulancia_12            1 
+s_08.00-08.59_ambulancia_13            1 
+s_08.00-08.59_ambulancia_14            1 
+s_08.00-08.59_ambulancia_15            1 
+s_08.00-08.59_ambulancia_16            1 
+s_08.00-08.59_ambulancia_17            1 
+s_08.00-08.59_ambulancia_18            1 
+s_09.00-09.59_ambulancia_1            1 
+s_09.00-09.59_ambulancia_2            1 
+s_09.00-09.59_ambulancia_3            1 
+s_09.00-09.59_ambulancia_4            1 
+s_09.00-09.59_ambulancia_5            1 
+s_09.00-09.59_ambulancia_6            1 
+s_09.00-09.59_ambulancia_7            1 
+s_09.00-09.59_ambulancia_8            1 
+s_09.00-09.59_ambulancia_9            1 
+s_09.00-09.59_ambulancia_10            1 
+s_09.00-09.59_ambulancia_11            1 
+s_09.00-09.59_ambulancia_12            1 
+s_09.00-09.59_ambulancia_13            1 
+s_09.00-09.59_ambulancia_14            1 
+s_09.00-09.59_ambulancia_15            1 
+s_09.00-09.59_ambulancia_16            1 
+s_09.00-09.59_ambulancia_17            1 
+s_09.00-09.59_ambulancia_18            1 
+s_10.00-10.59_ambulancia_1            1 
+s_10.00-10.59_ambulancia_2            1 
+s_10.00-10.59_ambulancia_3            1 
+s_10.00-10.59_ambulancia_4            1 
+s_10.00-10.59_ambulancia_5            1 
+s_10.00-10.59_ambulancia_6            1 
+s_10.00-10.59_ambulancia_7            1 
+s_10.00-10.59_ambulancia_8            1 
+s_10.00-10.59_ambulancia_9            1 
+s_10.00-10.59_ambulancia_10            1 
+s_10.00-10.59_ambulancia_11            1 
+s_10.00-10.59_ambulancia_12            1 
+s_10.00-10.59_ambulancia_13            1 
+s_10.00-10.59_ambulancia_14            1 
+s_10.00-10.59_ambulancia_15            1 
+s_10.00-10.59_ambulancia_16            1 
+s_10.00-10.59_ambulancia_17            1 
+s_10.00-10.59_ambulancia_18            1 
+s_11.00-11.59_ambulancia_1            1 
+s_11.00-11.59_ambulancia_2            1 
+s_11.00-11.59_ambulancia_3            1 
+s_11.00-11.59_ambulancia_4            1 
+s_11.00-11.59_ambulancia_5            1 
+s_11.00-11.59_ambulancia_6            1 
+s_11.00-11.59_ambulancia_7            1 
+s_11.00-11.59_ambulancia_8            1 
+s_11.00-11.59_ambulancia_9            1 
+s_11.00-11.59_ambulancia_10            1 
+s_11.00-11.59_ambulancia_11            1 
+s_11.00-11.59_ambulancia_12            1 
+s_11.00-11.59_ambulancia_13            1 
+s_11.00-11.59_ambulancia_14            1 
+s_11.00-11.59_ambulancia_15            1 
+s_11.00-11.59_ambulancia_16            1 
+s_11.00-11.59_ambulancia_17            1 
+s_11.00-11.59_ambulancia_18            1 
+s_12.00-12.59_ambulancia_1            1 
+s_12.00-12.59_ambulancia_2            1 
+s_12.00-12.59_ambulancia_3            1 
+s_12.00-12.59_ambulancia_4            1 
+s_12.00-12.59_ambulancia_5            1 
+s_12.00-12.59_ambulancia_6            1 
+s_12.00-12.59_ambulancia_7            1 
+s_12.00-12.59_ambulancia_8            1 
+s_12.00-12.59_ambulancia_9            1 
+s_12.00-12.59_ambulancia_10            1 
+s_12.00-12.59_ambulancia_11            1 
+s_12.00-12.59_ambulancia_12            1 
+s_12.00-12.59_ambulancia_13            1 
+s_12.00-12.59_ambulancia_14            1 
+s_12.00-12.59_ambulancia_15            1 
+s_12.00-12.59_ambulancia_16            1 
+s_12.00-12.59_ambulancia_17            1 
+s_12.00-12.59_ambulancia_18            1 
+s_13.00-13.59_ambulancia_1            1 
+s_13.00-13.59_ambulancia_2            1 
+s_13.00-13.59_ambulancia_3            1 
+s_13.00-13.59_ambulancia_4            1 
+s_13.00-13.59_ambulancia_5            1 
+s_13.00-13.59_ambulancia_6            1 
+s_13.00-13.59_ambulancia_7            1 
+s_13.00-13.59_ambulancia_8            1 
+s_13.00-13.59_ambulancia_9            1 
+s_13.00-13.59_ambulancia_10            1 
+s_13.00-13.59_ambulancia_11            1 
+s_13.00-13.59_ambulancia_12            1 
+s_13.00-13.59_ambulancia_13            1 
+s_13.00-13.59_ambulancia_14            1 
+s_13.00-13.59_ambulancia_15            1 
+s_13.00-13.59_ambulancia_16            1 
+s_13.00-13.59_ambulancia_17            1 
+s_13.00-13.59_ambulancia_18            1 
+s_14.00-14.59_ambulancia_1            1 
+s_14.00-14.59_ambulancia_2            1 
+s_14.00-14.59_ambulancia_3            1 
+s_14.00-14.59_ambulancia_4            1 
+s_14.00-14.59_ambulancia_5            1 
+s_14.00-14.59_ambulancia_6            1 
+s_14.00-14.59_ambulancia_7            1 
+s_14.00-14.59_ambulancia_8            1 
+s_14.00-14.59_ambulancia_9            1 
+s_14.00-14.59_ambulancia_10            1 
+s_14.00-14.59_ambulancia_11            1 
+s_14.00-14.59_ambulancia_12            1 
+s_14.00-14.59_ambulancia_13            1 
+s_14.00-14.59_ambulancia_14            1 
+s_14.00-14.59_ambulancia_15            1 
+s_14.00-14.59_ambulancia_16            1 
+s_14.00-14.59_ambulancia_17            1 
+s_14.00-14.59_ambulancia_18            1 
+s_15.00-15.59_ambulancia_1            1 
+s_15.00-15.59_ambulancia_2            1 
+s_15.00-15.59_ambulancia_3            1 
+s_15.00-15.59_ambulancia_4            1 
+s_15.00-15.59_ambulancia_5            1 
+s_15.00-15.59_ambulancia_6            1 
+s_15.00-15.59_ambulancia_7            1 
+s_15.00-15.59_ambulancia_8            1 
+s_15.00-15.59_ambulancia_9            1 
+s_15.00-15.59_ambulancia_10            1 
+s_15.00-15.59_ambulancia_11            1 
+s_15.00-15.59_ambulancia_12            1 
+s_15.00-15.59_ambulancia_13            1 
+s_15.00-15.59_ambulancia_14            1 
+s_15.00-15.59_ambulancia_15            1 
+s_15.00-15.59_ambulancia_16            1 
+s_15.00-15.59_ambulancia_17            1 
+s_15.00-15.59_ambulancia_18            1 
+s_16.00-16.59_ambulancia_1            1 
+s_16.00-16.59_ambulancia_2            1 
+s_16.00-16.59_ambulancia_3            1 
+s_16.00-16.59_ambulancia_4            1 
+s_16.00-16.59_ambulancia_5            1 
+s_16.00-16.59_ambulancia_6            1 
+s_16.00-16.59_ambulancia_7            1 
+s_16.00-16.59_ambulancia_8            1 
+s_16.00-16.59_ambulancia_9            1 
+s_16.00-16.59_ambulancia_10            1 
+s_16.00-16.59_ambulancia_11            1 
+s_16.00-16.59_ambulancia_12            1 
+s_16.00-16.59_ambulancia_13            1 
+s_16.00-16.59_ambulancia_14            1 
+s_16.00-16.59_ambulancia_15            1 
+s_16.00-16.59_ambulancia_16            1 
+s_16.00-16.59_ambulancia_17            1 
+s_16.00-16.59_ambulancia_18            1 
+s_17.00-17.59_ambulancia_1            1 
+s_17.00-17.59_ambulancia_2            1 
+s_17.00-17.59_ambulancia_3            1 
+s_17.00-17.59_ambulancia_4            1 
+s_17.00-17.59_ambulancia_5            1 
+s_17.00-17.59_ambulancia_6            1 
+s_17.00-17.59_ambulancia_7            1 
+s_17.00-17.59_ambulancia_8            1 
+s_17.00-17.59_ambulancia_9            1 
+s_17.00-17.59_ambulancia_10            1 
+s_17.00-17.59_ambulancia_11            1 
+s_17.00-17.59_ambulancia_12            1 
+s_17.00-17.59_ambulancia_13            1 
+s_17.00-17.59_ambulancia_14            1 
+s_17.00-17.59_ambulancia_15            1 
+s_17.00-17.59_ambulancia_16            1 
+s_17.00-17.59_ambulancia_17            1 
+s_17.00-17.59_ambulancia_18            1 
+s_18.00-18.59_ambulancia_1            1 
+s_18.00-18.59_ambulancia_2            1 
+s_18.00-18.59_ambulancia_3            1 
+s_18.00-18.59_ambulancia_4            1 
+s_18.00-18.59_ambulancia_5            1 
+s_18.00-18.59_ambulancia_6            1 
+s_18.00-18.59_ambulancia_7            1 
+s_18.00-18.59_ambulancia_8            1 
+s_18.00-18.59_ambulancia_9            1 
+s_18.00-18.59_ambulancia_10            1 
+s_18.00-18.59_ambulancia_11            1 
+s_18.00-18.59_ambulancia_12            1 
+s_18.00-18.59_ambulancia_13            1 
+s_18.00-18.59_ambulancia_14            1 
+s_18.00-18.59_ambulancia_15            1 
+s_18.00-18.59_ambulancia_16            1 
+s_18.00-18.59_ambulancia_17            1 
+s_18.00-18.59_ambulancia_18            1 
+s_19.00-19.59_ambulancia_1            1 
+s_19.00-19.59_ambulancia_2            1 
+s_19.00-19.59_ambulancia_3            1 
+s_19.00-19.59_ambulancia_4            1 
+s_19.00-19.59_ambulancia_5            1 
+s_19.00-19.59_ambulancia_6            1 
+s_19.00-19.59_ambulancia_7            1 
+s_19.00-19.59_ambulancia_8            1 
+s_19.00-19.59_ambulancia_9            1 
+s_19.00-19.59_ambulancia_10            1 
+s_19.00-19.59_ambulancia_11            1 
+s_19.00-19.59_ambulancia_12            1 
+s_19.00-19.59_ambulancia_13            1 
+s_19.00-19.59_ambulancia_14            1 
+s_19.00-19.59_ambulancia_15            1 
+s_19.00-19.59_ambulancia_16            1 
+s_19.00-19.59_ambulancia_17            1 
+s_19.00-19.59_ambulancia_18            1 
+s_20.00-20.59_ambulancia_1            1 
+s_20.00-20.59_ambulancia_2            1 
+s_20.00-20.59_ambulancia_3            1 
+s_20.00-20.59_ambulancia_4            1 
+s_20.00-20.59_ambulancia_5            1 
+s_20.00-20.59_ambulancia_6            1 
+s_20.00-20.59_ambulancia_7            1 
+s_20.00-20.59_ambulancia_8            1 
+s_20.00-20.59_ambulancia_9            1 
+s_20.00-20.59_ambulancia_10            1 
+s_20.00-20.59_ambulancia_11            1 
+s_20.00-20.59_ambulancia_12            1 
+s_20.00-20.59_ambulancia_13            1 
+s_20.00-20.59_ambulancia_14            1 
+s_20.00-20.59_ambulancia_15            1 
+s_20.00-20.59_ambulancia_16            1 
+s_20.00-20.59_ambulancia_17            1 
+s_20.00-20.59_ambulancia_18            1 
+s_21.00-21.59_ambulancia_1            1 
+s_21.00-21.59_ambulancia_2            1 
+s_21.00-21.59_ambulancia_3            1 
+s_21.00-21.59_ambulancia_4            1 
+s_21.00-21.59_ambulancia_5            1 
+s_21.00-21.59_ambulancia_6            1 
+s_21.00-21.59_ambulancia_7            1 
+s_21.00-21.59_ambulancia_8            1 
+s_21.00-21.59_ambulancia_9            1 
+s_21.00-21.59_ambulancia_10            1 
+s_21.00-21.59_ambulancia_11            1 
+s_21.00-21.59_ambulancia_12            1 
+s_21.00-21.59_ambulancia_13            1 
+s_21.00-21.59_ambulancia_14            1 
+s_21.00-21.59_ambulancia_15            1 
+s_21.00-21.59_ambulancia_16            1 
+s_21.00-21.59_ambulancia_17            1 
+s_21.00-21.59_ambulancia_18            1 
+s_22.00-22.59_ambulancia_1            1 
+s_22.00-22.59_ambulancia_2            1 
+s_22.00-22.59_ambulancia_3            1 
+s_22.00-22.59_ambulancia_4            1 
+s_22.00-22.59_ambulancia_5            1 
+s_22.00-22.59_ambulancia_6            1 
+s_22.00-22.59_ambulancia_7            1 
+s_22.00-22.59_ambulancia_8            1 
+s_22.00-22.59_ambulancia_9            1 
+s_22.00-22.59_ambulancia_10            1 
+s_22.00-22.59_ambulancia_11            1 
+s_22.00-22.59_ambulancia_12            1 
+s_22.00-22.59_ambulancia_13            1 
+s_22.00-22.59_ambulancia_14            1 
+s_22.00-22.59_ambulancia_15            1 
+s_22.00-22.59_ambulancia_16            1 
+s_22.00-22.59_ambulancia_17            1 
+s_22.00-22.59_ambulancia_18            1 
+s_23.00-23.59_ambulancia_1            1 
+s_23.00-23.59_ambulancia_2            1 
+s_23.00-23.59_ambulancia_3            1 
+s_23.00-23.59_ambulancia_4            1 
+s_23.00-23.59_ambulancia_5            1 
+s_23.00-23.59_ambulancia_6            1 
+s_23.00-23.59_ambulancia_7            1 
+s_23.00-23.59_ambulancia_8            1 
+s_23.00-23.59_ambulancia_9            1 
+s_23.00-23.59_ambulancia_10            1 
+s_23.00-23.59_ambulancia_11            1 
+s_23.00-23.59_ambulancia_12            1 
+s_23.00-23.59_ambulancia_13            1 
+s_23.00-23.59_ambulancia_14            1 
+s_23.00-23.59_ambulancia_15            1 
+s_23.00-23.59_ambulancia_16            1 
+s_23.00-23.59_ambulancia_17            1 
+s_23.00-23.59_ambulancia_18            1 
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 17:04:25 2019
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 17:05:54 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1249 rows, 292032 columns and 2096064 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.11s
+
+Explored 0 nodes (0 simplex iterations) in 0.22 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 17:25:50 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1249 rows, 292032 columns and 2096064 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.11s
+
+Explored 0 nodes (0 simplex iterations) in 0.22 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 17:37:12 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1249 rows, 292032 columns and 2096064 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.11s
+
+Explored 0 nodes (0 simplex iterations) in 0.23 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 17:46:03 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1249 rows, 292032 columns and 2096064 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.11s
+
+Explored 0 nodes (0 simplex iterations) in 0.23 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 18:08:45 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 292299 rows, 292032 columns and 8511264 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 44 rows and 0 columns (presolve time = 5s) ...
+Presolve removed 44 rows and 0 columns (presolve time = 10s) ...
+Presolve removed 44 rows and 0 columns (presolve time = 15s) ...
+Presolve removed 44 rows and 0 columns (presolve time = 20s) ...
+Presolve removed 44 rows and 0 columns (presolve time = 25s) ...
+Presolve removed 44 rows and 0 columns (presolve time = 30s) ...
+Presolve removed 44 rows and 0 columns (presolve time = 35s) ...
+Presolve removed 44 rows and 0 columns (presolve time = 40s) ...
+Presolve removed 20044 rows and 20000 columns (presolve time = 45s) ...
+Presolve removed 60044 rows and 60000 columns (presolve time = 51s) ...
+Presolve removed 110044 rows and 110000 columns (presolve time = 56s) ...
+Presolve removed 160044 rows and 160000 columns (presolve time = 60s) ...
+Presolve removed 240044 rows and 240000 columns (presolve time = 65s) ...
+Presolve removed 291626 rows and 291600 columns
+Presolve time: 66.66s
+
+Explored 0 nodes (0 simplex iterations) in 72.17 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 18:17:25 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 15549 rows, 292032 columns and 2096064 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.16s
+
+Explored 0 nodes (0 simplex iterations) in 0.32 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 18:35:23 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1249 rows, 292032 columns and 2096064 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.19s
+
+Explored 0 nodes (0 simplex iterations) in 0.33 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 18:56:27 2019
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 19:01:34 2019
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 19:04:30 2019
+
+Academic license - for non-commercial use only
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 19:26:04 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 724 rows, 292032 columns and 1404864 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 352746.00000
+Presolve removed 674 rows and 291432 columns
+Presolve time: 1.03s
+Presolved: 50 rows, 600 columns, 1632 nonzeros
+Found heuristic solution: objective 173844.00000
+Variable types: 0 continuous, 600 integer (600 binary)
+
+Root relaxation: cutoff, 96 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0      173844.000 173844.000  0.00%     -    1s
+
+Explored 0 nodes (96 simplex iterations) in 1.64 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 173844 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.738440000000e+05, best bound 1.738440000000e+05, gap 0.0000%
+
+    Variable            X 
+-------------------------
+x_00.00-00.59_ambulancia_1_paciente_10_CLINICA Miraflores            1 
+x_00.00-00.59_ambulancia_3_paciente_18_CLINICA Miraflores            1 
+x_00.00-00.59_ambulancia_4_paciente_19_CLINICA Miraflores            1 
+x_00.00-00.59_ambulancia_5_paciente_20_CLINICA Miraflores            1 
+x_00.00-00.59_ambulancia_11_paciente_15_CLINICA Los Leones            1 
+x_00.00-00.59_ambulancia_11_paciente_16_CLINICA Los Leones            1 
+x_00.00-00.59_ambulancia_11_paciente_17_HOSPITAL Santo Tomás de Limache            1 
+x_03.00-03.59_ambulancia_4_paciente_2_SAPU Kaplan            1 
+x_03.00-03.59_ambulancia_12_paciente_5_HOSPITAL Geriátrico Paz de La Tarde            1 
+x_03.00-03.59_ambulancia_14_paciente_3_HOSPITAL Geriátrico Paz de La Tarde            1 
+x_04.00-04.59_ambulancia_2_paciente_7_SAPU Kaplan            1 
+x_06.00-06.59_ambulancia_5_paciente_8_SAPU Concón             1 
+x_09.00-09.59_ambulancia_5_paciente_23_SAPU Pompeya            1 
+x_09.00-09.59_ambulancia_13_paciente_12_SAPU Artificio            1 
+x_10.00-10.59_ambulancia_13_paciente_4_HOSPITAL San Martín de Quillota            1 
+x_11.00-11.59_ambulancia_3_paciente_21_HOSPITAL Juana Ross de Edwards de Peñablanca            1 
+x_11.00-11.59_ambulancia_6_paciente_22_HOSPITAL de Quilpué            1 
+x_13.00-13.59_ambulancia_8_paciente_14_SAPU Ventanas            1 
+x_16.00-16.59_ambulancia_2_paciente_6_SAPU Kaplan            1 
+x_17.00-17.59_ambulancia_10_paciente_1_SAPU Concón             1 
+x_19.00-19.59_ambulancia_6_paciente_24_SAPU Pompeya            1 
+x_19.00-19.59_ambulancia_6_paciente_25_SAPU Pompeya            1 
+x_20.00-20.59_ambulancia_3_paciente_9_SAPU Concón             1 
+x_22.00-22.59_ambulancia_1_paciente_11_CLINICA Ciudad del Mar            1 
+x_23.00-23.59_ambulancia_8_paciente_13_SAPU Ventanas            1 
+s_00.00-00.59_ambulancia_1            1 
+s_00.00-00.59_ambulancia_2            1 
+s_00.00-00.59_ambulancia_3            1 
+s_00.00-00.59_ambulancia_4            1 
+s_00.00-00.59_ambulancia_5            1 
+s_00.00-00.59_ambulancia_6            1 
+s_00.00-00.59_ambulancia_7            1 
+s_00.00-00.59_ambulancia_8            1 
+s_00.00-00.59_ambulancia_9            1 
+s_00.00-00.59_ambulancia_10            1 
+s_00.00-00.59_ambulancia_11            1 
+s_00.00-00.59_ambulancia_12            1 
+s_00.00-00.59_ambulancia_13            1 
+s_00.00-00.59_ambulancia_14            1 
+s_00.00-00.59_ambulancia_15            1 
+s_00.00-00.59_ambulancia_16            1 
+s_00.00-00.59_ambulancia_17            1 
+s_00.00-00.59_ambulancia_18            1 
+s_01.00-01.59_ambulancia_1            1 
+s_01.00-01.59_ambulancia_2            1 
+s_01.00-01.59_ambulancia_3            1 
+s_01.00-01.59_ambulancia_4            1 
+s_01.00-01.59_ambulancia_5            1 
+s_01.00-01.59_ambulancia_6            1 
+s_01.00-01.59_ambulancia_7            1 
+s_01.00-01.59_ambulancia_8            1 
+s_01.00-01.59_ambulancia_9            1 
+s_01.00-01.59_ambulancia_10            1 
+s_01.00-01.59_ambulancia_11            1 
+s_01.00-01.59_ambulancia_12            1 
+s_01.00-01.59_ambulancia_13            1 
+s_01.00-01.59_ambulancia_14            1 
+s_01.00-01.59_ambulancia_15            1 
+s_01.00-01.59_ambulancia_16            1 
+s_01.00-01.59_ambulancia_17            1 
+s_01.00-01.59_ambulancia_18            1 
+s_02.00-02.59_ambulancia_1            1 
+s_02.00-02.59_ambulancia_2            1 
+s_02.00-02.59_ambulancia_3            1 
+s_02.00-02.59_ambulancia_4            1 
+s_02.00-02.59_ambulancia_5            1 
+s_02.00-02.59_ambulancia_6            1 
+s_02.00-02.59_ambulancia_7            1 
+s_02.00-02.59_ambulancia_8            1 
+s_02.00-02.59_ambulancia_9            1 
+s_02.00-02.59_ambulancia_10            1 
+s_02.00-02.59_ambulancia_11            1 
+s_02.00-02.59_ambulancia_12            1 
+s_02.00-02.59_ambulancia_13            1 
+s_02.00-02.59_ambulancia_14            1 
+s_02.00-02.59_ambulancia_15            1 
+s_02.00-02.59_ambulancia_16            1 
+s_02.00-02.59_ambulancia_17            1 
+s_02.00-02.59_ambulancia_18            1 
+s_03.00-03.59_ambulancia_1            1 
+s_03.00-03.59_ambulancia_2            1 
+s_03.00-03.59_ambulancia_3            1 
+s_03.00-03.59_ambulancia_4            1 
+s_03.00-03.59_ambulancia_5            1 
+s_03.00-03.59_ambulancia_6            1 
+s_03.00-03.59_ambulancia_7            1 
+s_03.00-03.59_ambulancia_8            1 
+s_03.00-03.59_ambulancia_9            1 
+s_03.00-03.59_ambulancia_10            1 
+s_03.00-03.59_ambulancia_11            1 
+s_03.00-03.59_ambulancia_12            1 
+s_03.00-03.59_ambulancia_13            1 
+s_03.00-03.59_ambulancia_14            1 
+s_03.00-03.59_ambulancia_15            1 
+s_03.00-03.59_ambulancia_16            1 
+s_03.00-03.59_ambulancia_17            1 
+s_03.00-03.59_ambulancia_18            1 
+s_04.00-04.59_ambulancia_1            1 
+s_04.00-04.59_ambulancia_2            1 
+s_04.00-04.59_ambulancia_3            1 
+s_04.00-04.59_ambulancia_4            1 
+s_04.00-04.59_ambulancia_5            1 
+s_04.00-04.59_ambulancia_6            1 
+s_04.00-04.59_ambulancia_7            1 
+s_04.00-04.59_ambulancia_8            1 
+s_04.00-04.59_ambulancia_9            1 
+s_04.00-04.59_ambulancia_10            1 
+s_04.00-04.59_ambulancia_11            1 
+s_04.00-04.59_ambulancia_12            1 
+s_04.00-04.59_ambulancia_13            1 
+s_04.00-04.59_ambulancia_14            1 
+s_04.00-04.59_ambulancia_15            1 
+s_04.00-04.59_ambulancia_16            1 
+s_04.00-04.59_ambulancia_17            1 
+s_04.00-04.59_ambulancia_18            1 
+s_05.00-05.59_ambulancia_1            1 
+s_05.00-05.59_ambulancia_2            1 
+s_05.00-05.59_ambulancia_3            1 
+s_05.00-05.59_ambulancia_4            1 
+s_05.00-05.59_ambulancia_5            1 
+s_05.00-05.59_ambulancia_6            1 
+s_05.00-05.59_ambulancia_7            1 
+s_05.00-05.59_ambulancia_8            1 
+s_05.00-05.59_ambulancia_9            1 
+s_05.00-05.59_ambulancia_10            1 
+s_05.00-05.59_ambulancia_11            1 
+s_05.00-05.59_ambulancia_12            1 
+s_05.00-05.59_ambulancia_13            1 
+s_05.00-05.59_ambulancia_14            1 
+s_05.00-05.59_ambulancia_15            1 
+s_05.00-05.59_ambulancia_16            1 
+s_05.00-05.59_ambulancia_17            1 
+s_05.00-05.59_ambulancia_18            1 
+s_06.00-06.59_ambulancia_1            1 
+s_06.00-06.59_ambulancia_2            1 
+s_06.00-06.59_ambulancia_3            1 
+s_06.00-06.59_ambulancia_4            1 
+s_06.00-06.59_ambulancia_5            1 
+s_06.00-06.59_ambulancia_6            1 
+s_06.00-06.59_ambulancia_7            1 
+s_06.00-06.59_ambulancia_8            1 
+s_06.00-06.59_ambulancia_9            1 
+s_06.00-06.59_ambulancia_10            1 
+s_06.00-06.59_ambulancia_11            1 
+s_06.00-06.59_ambulancia_12            1 
+s_06.00-06.59_ambulancia_13            1 
+s_06.00-06.59_ambulancia_14            1 
+s_06.00-06.59_ambulancia_15            1 
+s_06.00-06.59_ambulancia_16            1 
+s_06.00-06.59_ambulancia_17            1 
+s_06.00-06.59_ambulancia_18            1 
+s_07.00-07.59_ambulancia_1            1 
+s_07.00-07.59_ambulancia_2            1 
+s_07.00-07.59_ambulancia_3            1 
+s_07.00-07.59_ambulancia_4            1 
+s_07.00-07.59_ambulancia_5            1 
+s_07.00-07.59_ambulancia_6            1 
+s_07.00-07.59_ambulancia_7            1 
+s_07.00-07.59_ambulancia_8            1 
+s_07.00-07.59_ambulancia_9            1 
+s_07.00-07.59_ambulancia_10            1 
+s_07.00-07.59_ambulancia_11            1 
+s_07.00-07.59_ambulancia_12            1 
+s_07.00-07.59_ambulancia_13            1 
+s_07.00-07.59_ambulancia_14            1 
+s_07.00-07.59_ambulancia_15            1 
+s_07.00-07.59_ambulancia_16            1 
+s_07.00-07.59_ambulancia_17            1 
+s_07.00-07.59_ambulancia_18            1 
+s_08.00-08.59_ambulancia_1            1 
+s_08.00-08.59_ambulancia_2            1 
+s_08.00-08.59_ambulancia_3            1 
+s_08.00-08.59_ambulancia_4            1 
+s_08.00-08.59_ambulancia_5            1 
+s_08.00-08.59_ambulancia_6            1 
+s_08.00-08.59_ambulancia_7            1 
+s_08.00-08.59_ambulancia_8            1 
+s_08.00-08.59_ambulancia_9            1 
+s_08.00-08.59_ambulancia_10            1 
+s_08.00-08.59_ambulancia_11            1 
+s_08.00-08.59_ambulancia_12            1 
+s_08.00-08.59_ambulancia_13            1 
+s_08.00-08.59_ambulancia_14            1 
+s_08.00-08.59_ambulancia_15            1 
+s_08.00-08.59_ambulancia_16            1 
+s_08.00-08.59_ambulancia_17            1 
+s_08.00-08.59_ambulancia_18            1 
+s_09.00-09.59_ambulancia_1            1 
+s_09.00-09.59_ambulancia_2            1 
+s_09.00-09.59_ambulancia_3            1 
+s_09.00-09.59_ambulancia_4            1 
+s_09.00-09.59_ambulancia_5            1 
+s_09.00-09.59_ambulancia_6            1 
+s_09.00-09.59_ambulancia_7            1 
+s_09.00-09.59_ambulancia_8            1 
+s_09.00-09.59_ambulancia_9            1 
+s_09.00-09.59_ambulancia_10            1 
+s_09.00-09.59_ambulancia_11            1 
+s_09.00-09.59_ambulancia_12            1 
+s_09.00-09.59_ambulancia_13            1 
+s_09.00-09.59_ambulancia_14            1 
+s_09.00-09.59_ambulancia_15            1 
+s_09.00-09.59_ambulancia_16            1 
+s_09.00-09.59_ambulancia_17            1 
+s_09.00-09.59_ambulancia_18            1 
+s_10.00-10.59_ambulancia_1            1 
+s_10.00-10.59_ambulancia_2            1 
+s_10.00-10.59_ambulancia_3            1 
+s_10.00-10.59_ambulancia_4            1 
+s_10.00-10.59_ambulancia_5            1 
+s_10.00-10.59_ambulancia_6            1 
+s_10.00-10.59_ambulancia_7            1 
+s_10.00-10.59_ambulancia_8            1 
+s_10.00-10.59_ambulancia_9            1 
+s_10.00-10.59_ambulancia_10            1 
+s_10.00-10.59_ambulancia_11            1 
+s_10.00-10.59_ambulancia_12            1 
+s_10.00-10.59_ambulancia_13            1 
+s_10.00-10.59_ambulancia_14            1 
+s_10.00-10.59_ambulancia_15            1 
+s_10.00-10.59_ambulancia_16            1 
+s_10.00-10.59_ambulancia_17            1 
+s_10.00-10.59_ambulancia_18            1 
+s_11.00-11.59_ambulancia_1            1 
+s_11.00-11.59_ambulancia_2            1 
+s_11.00-11.59_ambulancia_3            1 
+s_11.00-11.59_ambulancia_4            1 
+s_11.00-11.59_ambulancia_5            1 
+s_11.00-11.59_ambulancia_6            1 
+s_11.00-11.59_ambulancia_7            1 
+s_11.00-11.59_ambulancia_8            1 
+s_11.00-11.59_ambulancia_9            1 
+s_11.00-11.59_ambulancia_10            1 
+s_11.00-11.59_ambulancia_11            1 
+s_11.00-11.59_ambulancia_12            1 
+s_11.00-11.59_ambulancia_13            1 
+s_11.00-11.59_ambulancia_14            1 
+s_11.00-11.59_ambulancia_15            1 
+s_11.00-11.59_ambulancia_16            1 
+s_11.00-11.59_ambulancia_17            1 
+s_11.00-11.59_ambulancia_18            1 
+s_12.00-12.59_ambulancia_1            1 
+s_12.00-12.59_ambulancia_2            1 
+s_12.00-12.59_ambulancia_3            1 
+s_12.00-12.59_ambulancia_4            1 
+s_12.00-12.59_ambulancia_5            1 
+s_12.00-12.59_ambulancia_6            1 
+s_12.00-12.59_ambulancia_7            1 
+s_12.00-12.59_ambulancia_8            1 
+s_12.00-12.59_ambulancia_9            1 
+s_12.00-12.59_ambulancia_10            1 
+s_12.00-12.59_ambulancia_11            1 
+s_12.00-12.59_ambulancia_12            1 
+s_12.00-12.59_ambulancia_13            1 
+s_12.00-12.59_ambulancia_14            1 
+s_12.00-12.59_ambulancia_15            1 
+s_12.00-12.59_ambulancia_16            1 
+s_12.00-12.59_ambulancia_17            1 
+s_12.00-12.59_ambulancia_18            1 
+s_13.00-13.59_ambulancia_1            1 
+s_13.00-13.59_ambulancia_2            1 
+s_13.00-13.59_ambulancia_3            1 
+s_13.00-13.59_ambulancia_4            1 
+s_13.00-13.59_ambulancia_5            1 
+s_13.00-13.59_ambulancia_6            1 
+s_13.00-13.59_ambulancia_7            1 
+s_13.00-13.59_ambulancia_8            1 
+s_13.00-13.59_ambulancia_9            1 
+s_13.00-13.59_ambulancia_10            1 
+s_13.00-13.59_ambulancia_11            1 
+s_13.00-13.59_ambulancia_12            1 
+s_13.00-13.59_ambulancia_13            1 
+s_13.00-13.59_ambulancia_14            1 
+s_13.00-13.59_ambulancia_15            1 
+s_13.00-13.59_ambulancia_16            1 
+s_13.00-13.59_ambulancia_17            1 
+s_13.00-13.59_ambulancia_18            1 
+s_14.00-14.59_ambulancia_1            1 
+s_14.00-14.59_ambulancia_2            1 
+s_14.00-14.59_ambulancia_3            1 
+s_14.00-14.59_ambulancia_4            1 
+s_14.00-14.59_ambulancia_5            1 
+s_14.00-14.59_ambulancia_6            1 
+s_14.00-14.59_ambulancia_7            1 
+s_14.00-14.59_ambulancia_8            1 
+s_14.00-14.59_ambulancia_9            1 
+s_14.00-14.59_ambulancia_10            1 
+s_14.00-14.59_ambulancia_11            1 
+s_14.00-14.59_ambulancia_12            1 
+s_14.00-14.59_ambulancia_13            1 
+s_14.00-14.59_ambulancia_14            1 
+s_14.00-14.59_ambulancia_15            1 
+s_14.00-14.59_ambulancia_16            1 
+s_14.00-14.59_ambulancia_17            1 
+s_14.00-14.59_ambulancia_18            1 
+s_15.00-15.59_ambulancia_1            1 
+s_15.00-15.59_ambulancia_2            1 
+s_15.00-15.59_ambulancia_3            1 
+s_15.00-15.59_ambulancia_4            1 
+s_15.00-15.59_ambulancia_5            1 
+s_15.00-15.59_ambulancia_6            1 
+s_15.00-15.59_ambulancia_7            1 
+s_15.00-15.59_ambulancia_8            1 
+s_15.00-15.59_ambulancia_9            1 
+s_15.00-15.59_ambulancia_10            1 
+s_15.00-15.59_ambulancia_11            1 
+s_15.00-15.59_ambulancia_12            1 
+s_15.00-15.59_ambulancia_13            1 
+s_15.00-15.59_ambulancia_14            1 
+s_15.00-15.59_ambulancia_15            1 
+s_15.00-15.59_ambulancia_16            1 
+s_15.00-15.59_ambulancia_17            1 
+s_15.00-15.59_ambulancia_18            1 
+s_16.00-16.59_ambulancia_1            1 
+s_16.00-16.59_ambulancia_2            1 
+s_16.00-16.59_ambulancia_3            1 
+s_16.00-16.59_ambulancia_4            1 
+s_16.00-16.59_ambulancia_5            1 
+s_16.00-16.59_ambulancia_6            1 
+s_16.00-16.59_ambulancia_7            1 
+s_16.00-16.59_ambulancia_8            1 
+s_16.00-16.59_ambulancia_9            1 
+s_16.00-16.59_ambulancia_10            1 
+s_16.00-16.59_ambulancia_11            1 
+s_16.00-16.59_ambulancia_12            1 
+s_16.00-16.59_ambulancia_13            1 
+s_16.00-16.59_ambulancia_14            1 
+s_16.00-16.59_ambulancia_15            1 
+s_16.00-16.59_ambulancia_16            1 
+s_16.00-16.59_ambulancia_17            1 
+s_16.00-16.59_ambulancia_18            1 
+s_17.00-17.59_ambulancia_1            1 
+s_17.00-17.59_ambulancia_2            1 
+s_17.00-17.59_ambulancia_3            1 
+s_17.00-17.59_ambulancia_4            1 
+s_17.00-17.59_ambulancia_5            1 
+s_17.00-17.59_ambulancia_6            1 
+s_17.00-17.59_ambulancia_7            1 
+s_17.00-17.59_ambulancia_8            1 
+s_17.00-17.59_ambulancia_9            1 
+s_17.00-17.59_ambulancia_10            1 
+s_17.00-17.59_ambulancia_11            1 
+s_17.00-17.59_ambulancia_12            1 
+s_17.00-17.59_ambulancia_13            1 
+s_17.00-17.59_ambulancia_14            1 
+s_17.00-17.59_ambulancia_15            1 
+s_17.00-17.59_ambulancia_16            1 
+s_17.00-17.59_ambulancia_17            1 
+s_17.00-17.59_ambulancia_18            1 
+s_18.00-18.59_ambulancia_1            1 
+s_18.00-18.59_ambulancia_2            1 
+s_18.00-18.59_ambulancia_3            1 
+s_18.00-18.59_ambulancia_4            1 
+s_18.00-18.59_ambulancia_5            1 
+s_18.00-18.59_ambulancia_6            1 
+s_18.00-18.59_ambulancia_7            1 
+s_18.00-18.59_ambulancia_8            1 
+s_18.00-18.59_ambulancia_9            1 
+s_18.00-18.59_ambulancia_10            1 
+s_18.00-18.59_ambulancia_11            1 
+s_18.00-18.59_ambulancia_12            1 
+s_18.00-18.59_ambulancia_13            1 
+s_18.00-18.59_ambulancia_14            1 
+s_18.00-18.59_ambulancia_15            1 
+s_18.00-18.59_ambulancia_16            1 
+s_18.00-18.59_ambulancia_17            1 
+s_18.00-18.59_ambulancia_18            1 
+s_19.00-19.59_ambulancia_1            1 
+s_19.00-19.59_ambulancia_2            1 
+s_19.00-19.59_ambulancia_3            1 
+s_19.00-19.59_ambulancia_4            1 
+s_19.00-19.59_ambulancia_5            1 
+s_19.00-19.59_ambulancia_6            1 
+s_19.00-19.59_ambulancia_7            1 
+s_19.00-19.59_ambulancia_8            1 
+s_19.00-19.59_ambulancia_9            1 
+s_19.00-19.59_ambulancia_10            1 
+s_19.00-19.59_ambulancia_11            1 
+s_19.00-19.59_ambulancia_12            1 
+s_19.00-19.59_ambulancia_13            1 
+s_19.00-19.59_ambulancia_14            1 
+s_19.00-19.59_ambulancia_15            1 
+s_19.00-19.59_ambulancia_16            1 
+s_19.00-19.59_ambulancia_17            1 
+s_19.00-19.59_ambulancia_18            1 
+s_20.00-20.59_ambulancia_1            1 
+s_20.00-20.59_ambulancia_2            1 
+s_20.00-20.59_ambulancia_3            1 
+s_20.00-20.59_ambulancia_4            1 
+s_20.00-20.59_ambulancia_5            1 
+s_20.00-20.59_ambulancia_6            1 
+s_20.00-20.59_ambulancia_7            1 
+s_20.00-20.59_ambulancia_8            1 
+s_20.00-20.59_ambulancia_9            1 
+s_20.00-20.59_ambulancia_10            1 
+s_20.00-20.59_ambulancia_11            1 
+s_20.00-20.59_ambulancia_12            1 
+s_20.00-20.59_ambulancia_13            1 
+s_20.00-20.59_ambulancia_14            1 
+s_20.00-20.59_ambulancia_15            1 
+s_20.00-20.59_ambulancia_16            1 
+s_20.00-20.59_ambulancia_17            1 
+s_20.00-20.59_ambulancia_18            1 
+s_21.00-21.59_ambulancia_1            1 
+s_21.00-21.59_ambulancia_2            1 
+s_21.00-21.59_ambulancia_3            1 
+s_21.00-21.59_ambulancia_4            1 
+s_21.00-21.59_ambulancia_5            1 
+s_21.00-21.59_ambulancia_6            1 
+s_21.00-21.59_ambulancia_7            1 
+s_21.00-21.59_ambulancia_8            1 
+s_21.00-21.59_ambulancia_9            1 
+s_21.00-21.59_ambulancia_10            1 
+s_21.00-21.59_ambulancia_11            1 
+s_21.00-21.59_ambulancia_12            1 
+s_21.00-21.59_ambulancia_13            1 
+s_21.00-21.59_ambulancia_14            1 
+s_21.00-21.59_ambulancia_15            1 
+s_21.00-21.59_ambulancia_16            1 
+s_21.00-21.59_ambulancia_17            1 
+s_21.00-21.59_ambulancia_18            1 
+s_22.00-22.59_ambulancia_1            1 
+s_22.00-22.59_ambulancia_2            1 
+s_22.00-22.59_ambulancia_3            1 
+s_22.00-22.59_ambulancia_4            1 
+s_22.00-22.59_ambulancia_5            1 
+s_22.00-22.59_ambulancia_6            1 
+s_22.00-22.59_ambulancia_7            1 
+s_22.00-22.59_ambulancia_8            1 
+s_22.00-22.59_ambulancia_9            1 
+s_22.00-22.59_ambulancia_10            1 
+s_22.00-22.59_ambulancia_11            1 
+s_22.00-22.59_ambulancia_12            1 
+s_22.00-22.59_ambulancia_13            1 
+s_22.00-22.59_ambulancia_14            1 
+s_22.00-22.59_ambulancia_15            1 
+s_22.00-22.59_ambulancia_16            1 
+s_22.00-22.59_ambulancia_17            1 
+s_22.00-22.59_ambulancia_18            1 
+s_23.00-23.59_ambulancia_1            1 
+s_23.00-23.59_ambulancia_2            1 
+s_23.00-23.59_ambulancia_3            1 
+s_23.00-23.59_ambulancia_4            1 
+s_23.00-23.59_ambulancia_5            1 
+s_23.00-23.59_ambulancia_6            1 
+s_23.00-23.59_ambulancia_7            1 
+s_23.00-23.59_ambulancia_8            1 
+s_23.00-23.59_ambulancia_9            1 
+s_23.00-23.59_ambulancia_10            1 
+s_23.00-23.59_ambulancia_11            1 
+s_23.00-23.59_ambulancia_12            1 
+s_23.00-23.59_ambulancia_13            1 
+s_23.00-23.59_ambulancia_14            1 
+s_23.00-23.59_ambulancia_15            1 
+s_23.00-23.59_ambulancia_16            1 
+s_23.00-23.59_ambulancia_17            1 
+s_23.00-23.59_ambulancia_18            1 
