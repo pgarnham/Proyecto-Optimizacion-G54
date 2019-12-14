@@ -2167,3 +2167,111 @@ x_20.00-20.59_ambulancia_1_paciente_11_CLINICA Ciudad del Mar            1
 x_20.00-20.59_ambulancia_10_paciente_13_SAPU Ventanas            1 
 x_22.00-22.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
 x_23.00-23.59_ambulancia_3_paciente_21_HOSPITAL Juana Ross de Edwards de Peñablanca            1 
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 14:22:05 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1226 rows, 292032 columns and 928800 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 480 rows and 291810 columns
+Presolve time: 0.41s
+
+Explored 0 nodes (0 simplex iterations) in 0.71 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Fri Dec 13 14:29:30 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 1226 rows, 292032 columns and 928800 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 480 rows and 291810 columns
+Presolve time: 0.41s
+
+Explored 0 nodes (0 simplex iterations) in 0.70 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            X 
+-------------------------
+
+Gurobi 8.0.1 (mac64, Python) logging started Sat Dec 14 16:49:22 2019
+
+Academic license - for non-commercial use only
+Optimize a model with 651 rows, 292032 columns and 928800 nonzeros
+Variable types: 0 continuous, 292032 integer (292032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+03, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 303448.00000
+Presolve removed 651 rows and 292032 columns
+Presolve time: 0.52s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.63 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 2: 165994 303448 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.659940000000e+05, best bound 1.659940000000e+05, gap 0.0000%
+
+    Variable            X 
+-------------------------
+x_01.00-01.59_ambulancia_2_paciente_22_HOSPITAL de Quilpué            1 
+x_04.00-04.59_ambulancia_12_paciente_4_HOSPITAL San Martín de Quillota            1 
+x_04.00-04.59_ambulancia_14_paciente_16_HOSPITAL Mario Sánchez de La Calera            1 
+x_05.00-05.59_ambulancia_6_paciente_9_SAPU Concón             1 
+x_06.00-06.59_ambulancia_2_paciente_19_CLINICA Los Carrera            1 
+x_06.00-06.59_ambulancia_4_paciente_7_SAPU Kaplan            1 
+x_07.00-07.59_ambulancia_6_paciente_2_SAPU Kaplan            1 
+x_07.00-07.59_ambulancia_14_paciente_17_HOSPITAL Santo Tomás de Limache            1 
+x_09.00-09.59_ambulancia_1_paciente_11_CLINICA Ciudad del Mar            1 
+x_09.00-09.59_ambulancia_11_paciente_12_SAPU Artificio            1 
+x_10.00-10.59_ambulancia_2_paciente_8_SAPU Concón             1 
+x_14.00-14.59_ambulancia_6_paciente_23_SAPU Pompeya            1 
+x_16.00-16.59_ambulancia_7_paciente_1_SAPU Concón             1 
+x_16.00-16.59_ambulancia_12_paciente_5_HOSPITAL Geriátrico Paz de La Tarde            1 
+x_17.00-17.59_ambulancia_8_paciente_13_SAPU Ventanas            1 
+x_18.00-18.59_ambulancia_3_paciente_21_HOSPITAL Juana Ross de Edwards de Peñablanca            1 
+x_19.00-19.59_ambulancia_1_paciente_10_CLINICA Ciudad del Mar            1 
+x_19.00-19.59_ambulancia_9_paciente_14_SAPU Ventanas            1 
+x_23.00-23.59_ambulancia_2_paciente_6_SAPU Kaplan            1 
+x_23.00-23.59_ambulancia_3_paciente_20_CLINICA Los Carrera            1 
+x_23.00-23.59_ambulancia_3_paciente_24_SAPU Pompeya            1 
+x_23.00-23.59_ambulancia_3_paciente_25_SAPU Pompeya            1 
+x_23.00-23.59_ambulancia_6_paciente_18_CLINICA Los Carrera            1 
+x_23.00-23.59_ambulancia_14_paciente_3_HOSPITAL Geriátrico Paz de La Tarde            1 
+x_23.00-23.59_ambulancia_14_paciente_15_CLINICA Los Leones            1 

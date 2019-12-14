@@ -314,3 +314,6 @@ for paciente, latlong in c_pg.items():
 # print(my_dist["duration"]["value"])
 # print([calc_departure(per) for per in periodos])
 # print(ambulancia_avanzada)
+
+
+print(l_p)

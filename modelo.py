@@ -69,13 +69,14 @@ modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente, centro] for ambulan
 
 
 # # 3 Atender a un paciente en clinica privada, si así lo desea...
+# SUMAR SOBRE LOS TIEMPOS TAMBIEN
 
-# modelo.addConstrs((l_p[paciente] <= quicksum(x[periodo, ambulancia, paciente, centro] * u_h2[centro]
-#                                             for ambulancia in ambulancias
-#                                             for centro in centros)
-#                   for paciente in pacientes
-#                   for periodo in periodos),
-#                   name="clinica_privada")
+modelo.addConstrs((l_p[paciente] <= quicksum(x[periodo, ambulancia, paciente, centro] * u_h2[centro]
+                                            for ambulancia in ambulancias
+                                            for centro in centros
+                                            for periodo in periodos)
+                  for paciente in pacientes),
+                  name="clinica_privada")
 
 # # 4 Atender paciente en centro que posee la prestacion
 
@@ -98,6 +99,7 @@ modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente, centro] for ambulan
 #                    name="limite_ambulancias")
 
 # # # 6 Relacion de Variables
+# 
 
 # modelo.addConstrs((x[periodo, ambulancia, paciente] == quicksum(y[periodo, ambulancia,
 #                   paciente, centro] for centro in centros)
