@@ -1,15 +1,18 @@
 # Proyecto Optimización G54
 
 from gurobipy import Model, GRB, quicksum
+from math import ceil
 # Agregué el conjunto pacientes a cojuntos
 from conjuntos import (centros, periodos, prestaciones, bases,
                        ambulancias, pacientes)
 
 # Al psi le puse una f
-from conjuntos import (k_a, i_h, c_pg, u_h2, d_bgt, f_hgt, r_ab,
+from conjuntos import (k_a, i_h, c_pg, u_h2, r_ab,
                         lambda_p, v_p, l_p)
 
 from tiempo_centro_base import m_bht
+from dict_d_bgt import d_bgt
+from dict_f_hgt import f_hgt
 
 modelo = Model("Sistema de Atención Médica SAMU")
 
@@ -117,6 +120,14 @@ modelo.addConstrs((quicksum(x[periodo, ambulancia, paciente, centro] for pacient
 #                    for paciente in pacientes
 #                    for centro in centros),
 #                   name="ocupar_ambulancia")
+
+modelo.addConstrs((quicksum(s[periodo, ambulancia] for base in bases for period in periodos if (periodos[period][0] > periodos[periodo][0] and periodos[periodo][0] < min(periodos[periodo][0]| + int(ceil((f_hgt[paciente][centro] + d_bgt[paciente][base] + m_bht[base][centro][period])/3600)) + 1, len(periodos)))) 
+                   <= 1 - quicksum(x[periodo, ambulancia, paciente, centro]
+                    for paciente in pacientes
+                    for centro in centros)
+                   for periodo in periodos
+                   for ambulancia in ambulancias),
+                   name="ocupar_ambulancia")
 
 
 # # 8 No atender más de una vez a un paciente

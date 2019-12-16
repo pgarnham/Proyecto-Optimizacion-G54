@@ -96,6 +96,7 @@ with open("conjuntos/periodos.csv", "r", encoding="utf-8") as file:
         inicio += 3600
         fin += 3600
 
+
 # ---------------------------------------------------------------
 
 # Prestaciones --------------------------------------------------
@@ -274,19 +275,26 @@ with open("conjuntos/periodo_accidente.csv", "r", encoding="utf-8") as file:
         periodo_accidente[f"paciente_{nro_paciente}"] = periodo
 
 
-d_bgt = {f"paciente_{i}": {} for i in range(1, 26)}
-f_hgt = {f"paciente_{i}": {} for i in range(1, 26)}
-# m_bht = {base: {centro: {} for centro in centros} for base in bases}
 
-for paciente, latlong in c_pg.items():
-    inicio = calc_departure(periodo_accidente[paciente])
-    loc_paciente = (latlong["lat"], latlong["long"])
-    for base, loc_base in localizacion_bases.items():
-        d_bgt[paciente][base] = duracion(loc_base, loc_paciente, inicio)
-        pass
-    for centro, latlong in centros.items():
-        loc_centro = (latlong["lat"], latlong["long"])
-        f_hgt[paciente][centro] = duracion(loc_paciente, loc_centro, inicio)
+
+
+
+# d_bgt = {f"paciente_{i}": {} for i in range(1, 26)}
+# f_hgt = {f"paciente_{i}": {} for i in range(1, 26)}
+# # m_bht = {base: {centro: {} for centro in centros} for base in bases}
+
+# for paciente, latlong in c_pg.items():
+#     inicio = calc_departure(periodo_accidente[paciente])
+#     loc_paciente = (latlong["lat"], latlong["long"])
+#     for base, loc_base in localizacion_bases.items():
+#         d_bgt[paciente][base] = duracion(loc_base, loc_paciente, inicio)
+#         pass
+#     for centro, latlong in centros.items():
+#         loc_centro = (latlong["lat"], latlong["long"])
+#         f_hgt[paciente][centro] = duracion(loc_paciente, loc_centro, inicio)
+
+
+
 
 # for base, loc_base in localizacion_bases.items():
 #     for centro, latlong in centros.items():
@@ -338,3 +346,21 @@ with open("conjuntos/centro_salud_reducido.csv", "r", encoding="utf-8") as file:
             aux = 1
         else:
           i_h[centro[0]] = int(centro[1])
+
+
+for i in range(1, 26):
+    print(f"----------     Inicio paciente_{i}      ------------------")
+    paciente_aux = f"paciente_{i}"
+    print(f"     paciente_{i} en el periodo {periodo_accidente[paciente_aux]}")
+    if l_p[f"paciente_{i}"] == 0:
+        print("     Se atiende en publico")
+    else:
+        print("     Se atiende en privado")
+
+    if lambda_p[f"paciente_{i}"] == 0:
+        print("     No requiere prestaciones avanzadas")
+    else:
+        print("     Si requiere prestaciones avanzadas")
+    print(f"----------     Fin paciente_{i}      ------------------")
+    print("     ")
+    print("     ")
